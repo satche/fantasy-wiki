@@ -10,9 +10,7 @@ const props = defineProps({
 <template>
     <article>
         <NuxtLink :to="props.link">
-            <img v-if="props.img"
-                 :src="props.img"
-                 alt="">
+            <NuxtImg :src="props.img" alt="" />
             <h2>{{ props.title }}</h2>
             <p v-if="props.description">{{ props.description }}</p>
         </NuxtLink>
@@ -46,6 +44,13 @@ a {
     display: flex;
     flex-direction: column;
     height: 100%;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
 img {
