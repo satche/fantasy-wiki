@@ -1,0 +1,32 @@
+/********************************
+ * Variables
+ ********************************/
+
+:root {
+  /* Typography
+  ********************************/
+  --font-family-headings: "Helvetica Neue", sans-serif;
+  --font-family-text: "Helvetica Neue", sans-serif;
+
+  --font-size: 1rem;
+  --font-size-s: 0.8rem;
+
+  /* Colors
+  ********************************/
+  --color-primary: #ea0075;
+  --color-text: #2f2f2f;
+  --color-background: #e9e9e9;
+
+  --color-primary-soft: hsl(from var(--color-primary) h s calc(l + 15));
+  --color-primary-hard: hsl(from var(--color-primary) h s calc(l - 15));
+
+  --color-text-soft: hsl(from var(--color-text) h s calc(l + 25));
+  --color-text-hard: hsl(from var(--color-text) h s calc(l - 25));
+
+  --color-background-soft: hsl(from var(--color-background) h s calc(l + 15));
+  --color-background-hard: hsl(from var(--color-background) h s calc(l - 15));
+}
+
+body {
+  background: var(--color-background);
+}
