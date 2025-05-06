@@ -1,14 +1,18 @@
+<script setup lang="ts"></script>
+
 <template>
-  <nav>
-    <ul>
-      <li>
-        <NuxtLink to="/">Home</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/characters">Personnages</NuxtLink>
-      </li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <NuxtLink to="/">Home</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/characters">Personnages</NuxtLink>
+        </li>
+      </ul>
+    </nav>
+  </header>
 </template>
 
 <style scoped>

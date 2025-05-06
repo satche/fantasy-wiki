@@ -4,13 +4,8 @@ const { data } = await useAsyncData('navigation', () => queryCollectionNavigatio
 
 <template>
   <div>
-    <header>
-      <Navbar />
-    </header>
-    <main>
-      <slot />
-      <Collection :data="data[0].children" />
-    </main>
+    <slot />
+    <Collection :data="data[0].children" />
   </div>
 </template>
 

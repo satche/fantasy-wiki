@@ -8,7 +8,6 @@ export default defineNuxtConfig({
         lang: "ch-fr"
       }
     },
-    layoutTransition: { name: 'layout', mode: 'out-in' },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
 

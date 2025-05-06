@@ -20,6 +20,9 @@
   --color-background-soft: hsl(from var(--color-background) h s calc(l + 15));
   --color-background-hard: hsl(from var(--color-background) h s calc(l - 15));
 
+  --color-link: var(--color-primary);
+  --color-link-active: var(--color-primary-hard);
+
   /* Typography
   ********************************/
   --font-family-headings: "Helvetica Neue", sans-serif;

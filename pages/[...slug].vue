@@ -4,9 +4,9 @@ const { data: page } = await useAsyncData(route.path, () => queryCollection('dat
 </script>
 
 <template>
-  <div id="content"> 
+  <main> 
     <NuxtLayout :name="page?.meta?.layout">
       <ContentRenderer v-if="page" :value="page" />
     </NuxtLayout>
-  </div>
+  </main>
 </template>
