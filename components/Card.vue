@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps({
-    link: String,
+    to: String,
     title: String,
     description: String,
     img: String,
@@ -9,7 +9,7 @@ const props = defineProps({
 
 <template>
     <article>
-        <NuxtLink :to="props.link">
+        <NuxtLink :to="props.to">
             <NuxtImg :src="props.img" alt="" />
             <h2>{{ props.title }}</h2>
             <p v-if="props.description">{{ props.description }}</p>

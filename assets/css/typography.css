@@ -16,21 +16,22 @@ h6 {
 }
 
 h1 {
-  font-size: calc(var(--font-size) * 2.5);
+  font-size: var(--font-size-xxl);
 }
 
 h2 {
-  font-size: calc(var(--font-size) * 1.8);
+  font-size: var(--font-size-xl);
 }
 
 h3 {
-  font-size: calc(var(--font-size) * 1.4);
+  font-size: var(--font-size-l);
 }
 
 h4,
 h5,
 h6 {
-  font-size: calc(var(--font-size) * 1.15);
+  font-size: var(--font-size-m);
+  font-weight: bold;
 }
 
 /* Links

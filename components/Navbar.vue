@@ -1,9 +1,3 @@
-<script lang="ts">
-export default {
-  name: 'Navbar',
-};
-</script>
-
 <template>
   <nav>
     <ul>

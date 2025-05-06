@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-
   app: {
     head: {
       title: "Asema",
@@ -8,9 +7,12 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "ch-fr"
       }
-    }
+    },
+    layoutTransition: { name: 'layout', mode: 'out-in' },
+    pageTransition: { name: 'page', mode: 'out-in' }
   },
 
   modules: ['@nuxt/content', "@nuxt/image"],
   devtools: { enabled: true },
+  compatibilityDate: "2025-03-17",
 })

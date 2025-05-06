@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 const props = defineProps({
     data: Array
 })
@@ -6,9 +6,10 @@ const props = defineProps({
 
 <template>
     <nav>
-      <ul>
+      <ul v-if="data">
         <li v-for="item in data">
-          <Card :link="item.path"
+          
+          <Card :to="item.path"
                 :title="item.title"
                 :description="item.description"
                 :img="item.meta?.img" />
