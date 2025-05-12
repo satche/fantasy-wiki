@@ -151,4 +151,9 @@ button#mobile-navigation_button {
     font-size: var(--font-size-l);
   }
 }
+
+.router-link-active,
+.parent-active-class {
+  color: var(--color-link-active)
+}
 </style>
