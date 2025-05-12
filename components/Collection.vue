@@ -1,21 +1,29 @@
-<script setup>
-const props = defineProps({
-    data: Array
-})
+<script setup lang="ts">
+interface CollectionItem {
+  path: string;
+  title: string;
+  description: string;
+  meta?: {
+    img?: string;
+  };
+}
+
+const props = defineProps<{
+  data: CollectionItem[];
+}>();
 </script>
 
 <template>
-    <nav>
-      <ul v-if="data">
-        <li v-for="item in data">
-          
-          <Card :to="item.path"
-                :title="item.title"
-                :description="item.description"
-                :img="item.meta?.img" />
-        </li>
-      </ul>
-    </nav>
+  <nav>
+    <ul v-if="props.data">
+      <li v-for="item in props.data">
+        <Card :to="item.path"
+              :title="item.title"
+              :description="item.description"
+              :img="item.meta?.img" />
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <style scoped>
