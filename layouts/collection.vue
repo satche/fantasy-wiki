@@ -5,7 +5,7 @@ const { data } = await useAsyncData('navigation', () => queryCollectionNavigatio
 <template>
   <div>
     <slot />
-    <Collection :data="data.find(item => item.path === $route.path).children" />
+    <Collection :data="data?.find(item => item.path === $route.path)?.children || []" />
   </div>
 </template>
 
