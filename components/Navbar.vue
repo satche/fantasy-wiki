@@ -230,4 +230,9 @@ button#mobile-navigation_button {
 .parent-active-class {
   color: var(--color-link-active)
 }
+
+.router-link-active,
+.parent-active-class {
+  color: var(--color-link-active)
+}
 </style>
