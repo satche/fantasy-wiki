@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const nav = [
   { "title": "Home", "path": "/" },
-  { "title": "Personnages", "path": "/characters" },
-  { "title": "Lore", "path": "/lore" }
+  { "title": "Histoire", "path": "/lore/histoire" },
+  { "title": "Langues", "path": "/lore/langues" }
 ]
 </script>
 

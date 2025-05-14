@@ -3,24 +3,22 @@ interface CollectionItem {
   path: string;
   title: string;
   description: string;
-  meta?: {
-    img?: string;
-  };
+  img: string;
 }
 
-const props = defineProps<{
-  data: CollectionItem[];
-}>();
+const props = defineProps<{ data: Array<CollectionItem> }>();
 </script>
 
 <template>
   <nav>
     <ul v-if="props.data">
-      <li v-for="item in props.data">
+      {{ data }}
+      <li v-for="item in props.data"
+          :key="item.path">
         <Card :to="item.path"
               :title="item.title"
               :description="item.description"
-              :img="item.meta?.img" />
+              :img="item.img" />
       </li>
     </ul>
   </nav>
