@@ -1,8 +1,12 @@
 <script setup lang="ts">
 const nav = [
-  { "title": "Home", "path": "/" },
-  { "title": "Histoire", "path": "/lore/histoire" },
-  { "title": "Langues", "path": "/lore/langues" }
+  { "title": "🏠 Accueil", "path": "/" },
+  { "title": "📝 Sessions", "path": "/sessions", "disabled": true },
+  { "title": "👥 Personnages", "path": "/personnages", "disabled": true },
+  { "title": "🗺️ Lieux", "path": "/lieux", "disabled": true },
+  { "title": "🎒 Objets", "path": "/objets", "disabled": true },
+  { "title": "📖 Lore", "path": "/lore" },
+  { "title": "👤 Joueurs", "path": "/joueurs", "disabled": true },
 ]
 </script>
 
@@ -12,6 +16,8 @@ const nav = [
       <ul>
         <li v-for="page in nav">
           <NuxtLink :to="page.path"
+                    :aria-disabled="page.disabled ? true : false"
+                    :tabindex="page.disabled ? -1 : 0"
                     :class="page.path == '/' || { 'parent-active-class': $route.path.startsWith(page.path) }">
             {{ page.title }}
           </NuxtLink>
@@ -32,6 +38,10 @@ ul {
 
 li {
   list-style: none;
+
+  &:has(a[aria-disabled="true"]) {
+    cursor: not-allowed;
+  }
 }
 
 a {
@@ -39,6 +49,11 @@ a {
   padding: 0.5rem 1rem;
   border: 1px solid var(--color-text);
   text-decoration: none;
+
+  &[aria-disabled="true"] {
+    pointer-events: none;
+    opacity: 0.25;
+  }
 }
 
 .router-link-active,

@@ -11,7 +11,14 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' }
   },
 
+  css: ["~/assets/css/index.css"],
+
   modules: ['@nuxt/content', "@nuxt/image"],
+
+  nitro: {
+    plugins: ['~/scripts/copy-content-images']
+  },
+
   devtools: { enabled: true },
   compatibilityDate: "2025-03-17",
 })

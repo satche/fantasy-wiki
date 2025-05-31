@@ -12,7 +12,6 @@ const props = defineProps<{ data: Array<CollectionItem> }>();
 <template>
   <nav>
     <ul v-if="props.data">
-      {{ data }}
       <li v-for="item in props.data"
           :key="item.path">
         <Card :to="item.path"
@@ -27,10 +26,9 @@ const props = defineProps<{ data: Array<CollectionItem> }>();
 <style scoped>
 ul {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
+  margin: 0;
   padding: 0;
 }
 

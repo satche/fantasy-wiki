@@ -10,7 +10,8 @@ const props = defineProps({
 <template>
     <article>
         <NuxtLink :to="props.to">
-            <NuxtImg :src="props.img" alt="" />
+            <NuxtImg :src="props.img"
+                     alt="" />
             <h2>{{ props.title }}</h2>
             <p v-if="props.description">{{ props.description }}</p>
         </NuxtLink>
@@ -21,7 +22,7 @@ const props = defineProps({
 article {
     --card-spacing: 0.6rem;
 
-    width: 160px;
+    width: 100%;
     height: 100%;
     overflow: hidden;
 
