@@ -5,6 +5,8 @@
 .nitro
 .cache
 dist
+# Duplicate with content/**/assets
+public/assets
 
 # Duplicate with content/**/assets
 public/assets
