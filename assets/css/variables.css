@@ -45,10 +45,10 @@
   --space-xxl: calc(var(--space) * 4.5);
   --space-xl: calc(var(--space) * 2.5);
   --space-l: calc(var(--space) * 1.5);
-  --space-m: var(var(--space));
-  --space-s: calc(var(space) * 0.8rem);
-  --space-xs: calc(var(space) * 0.6rem);
-  --space-xxs: calc(var(space) * 0.6rem);
+  --space-m: var(--space);
+  --space-s: calc(var(--space) * 0.8);
+  --space-xs: calc(var(--space) * 0.6);
+  --space-xxs: calc(var(--space) * 0.6);
 }
 
 body {

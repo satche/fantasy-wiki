@@ -4,12 +4,17 @@ const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection('data').path(route.path).first()
 })
 
-const defaultCollectionLayout = ["lore"]
-let layout = page?.meta?.layout || "default"
+const defaultCollectionLayouts = ["lore"]
 
-if (defaultCollectionLayout.some(item => route.path === `/${item}`)) {
-  layout = "collection"
-}
+const layout = computed(() => {
+  const pageLayout = page.value?.meta?.layout
+
+  if (defaultCollectionLayouts.includes(route.path.replace(/^\//, "")) && pageLayout === undefined) {
+    return "collection"
+  }
+
+  return pageLayout ?? "default"
+})
 </script>
 
 <template>

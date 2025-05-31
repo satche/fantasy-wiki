@@ -1,10 +1,13 @@
-<script setup lang="ts">
-const { data } = await useAsyncData('navigation', () => queryCollectionNavigation('data', ['description', 'meta']))
+<script setup>
+const route = useRoute()
+const { data } = await useAsyncData('navigation', () => {
+  return queryCollectionNavigation('data', ['description', 'meta']).where("path", "LIKE", route.path + '%')
+})
 </script>
 
 <template>
   <div>
     <slot />
-    <Collection :data="data?.find(item => item.path === $route.path)?.children || []" />
+    <Collection :data="data[0].children || []" />
   </div>
 </template>
