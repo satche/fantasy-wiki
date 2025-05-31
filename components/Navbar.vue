@@ -4,7 +4,6 @@ const nav = [
   { "title": "📝 Sessions", "path": "/sessions", "disabled": true },
   { "title": "👥 Personnages", "path": "/personnages", "disabled": true },
   { "title": "🗺️ Lieux", "path": "/lieux", "disabled": true },
-  { "title": "🎒 Objets", "path": "/objets", "disabled": true },
   { "title": "📖 Lore", "path": "/lore" },
   { "title": "👤 Joueurs", "path": "/joueurs", "disabled": true },
 ]
