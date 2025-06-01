@@ -6,23 +6,19 @@ const { data: page } = await useAsyncData(route.path, () => {
 
 const defaultCollectionLayouts = ["lore"]
 
-const layout = computed(() => {
-  const pageLayout = page.value?.meta?.layout
+let layout = page.value?.meta?.layout
 
-  if (defaultCollectionLayouts.includes(route.path.replace(/^\//, "")) && pageLayout === undefined) {
-    return "collection"
-  }
+if (defaultCollectionLayouts.includes(route.path.replace(/^\//, "")) && layout === undefined) {
+  layout = "collection"
+}
 
-  return pageLayout ?? "default"
-})
+layout = layout || "default"
 </script>
 
 <template>
   <main>
-    <NuxtLayout :name="layout">
-      <ContentRenderer v-if="page"
-                       class="markdown"
-                       :value="page" />
+    <NuxtLayout :name="layout" fallback="default" :page="page" >
+      <slot />
     </NuxtLayout>
   </main>
 </template>

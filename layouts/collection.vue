@@ -1,13 +1,14 @@
 <script setup>
 const route = useRoute()
-const { data } = await useAsyncData('navigation', () => {
-  return queryCollectionNavigation('data', ['description', 'meta']).where("path", "LIKE", route.path + '%')
+const { data: page } = await useAsyncData(route.path, () => {
+  return queryCollection('data').path(route.path).first()
 })
 </script>
 
 <template>
   <div>
-    <slot />
-    <Collection :data="data[0].children || []" />
+    <ContentRenderer v-if="page"
+                     :value="page" />
+    <Collection :route="route.path" />
   </div>
 </template>

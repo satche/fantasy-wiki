@@ -1,23 +1,32 @@
 <script setup lang="ts">
-interface CollectionItem {
+interface NavigationItem {
   path: string;
-  title: string;
-  description: string;
-  img: string;
+  title?: string;
+  description?: string;
+  img?: string;
+  children?: NavigationItem[];
 }
 
-const props = defineProps<{ data: Array<CollectionItem> }>();
+const props = defineProps<{route: String}>();
+
+const { data } = await useAsyncData<NavigationItem[]>(
+  `${props.route}_navigation`, () => {
+  return queryCollectionNavigation('data', ['description', 'meta'])
+    .where("path", "LIKE", props.route + '%')
+})
 </script>
 
 <template>
   <nav>
-    <ul v-if="props.data">
-      <li v-for="item in props.data"
+    <ul v-if="data">
+      <li v-for="item in data[0].children"
           :key="item.path">
-        <Card :to="item.path"
+       
+          <Card :to="item.path"
               :title="item.title"
               :description="item.description"
               :img="item.img" />
+
       </li>
     </ul>
   </nav>

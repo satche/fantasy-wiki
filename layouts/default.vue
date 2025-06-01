@@ -1,3 +1,11 @@
+<script setup>
+defineProps({
+  page: Object
+})
+</script>
+
 <template>
-    <slot />
+    <div>
+      <ContentRenderer v-if="page" :value="page" />
+    </div>
 </template>
