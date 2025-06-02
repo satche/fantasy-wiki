@@ -1,11 +1,39 @@
 <script setup lang="ts">
 const nav = [
-  { "title": "🏠 Accueil", "path": "/" },
-  { "title": "📝 Sessions", "path": "/sessions", "disabled": true },
-  { "title": "👥 Personnages", "path": "/personnages", "disabled": true },
-  { "title": "🗺️ Lieux", "path": "/lieux", "disabled": true },
-  { "title": "📖 Lore", "path": "/lore" },
-  { "title": "👤 Joueurs", "path": "/joueurs", "disabled": true },
+  {
+    "title": "Accueil",
+    "path": "/",
+    "icon": "home"
+  },
+  {
+    "title": "Sessions",
+    "path": "/sessions",
+    "icon": "book",
+    "disabled": true
+  },
+  {
+    "title": "Personnages",
+    "path": "/personnages",
+    "icon": "user",
+    "disabled": true
+  },
+  {
+    "title": "Lieux",
+    "path": "/lieux",
+    "icon": "pin",
+    "disabled": true
+  },
+  {
+    "title": "Lore",
+    "path": "/lore",
+    "icon": "book"
+  },
+  {
+    "title": "Joueurs",
+    "path": "/joueurs",
+    "icon": "users",
+    "disabled": true
+  },
 ]
 
 const menuOpen = ref(false);
@@ -22,6 +50,7 @@ const menuOpen = ref(false);
                     :aria-disabled="page.disabled ? true : false"
                     :tabindex="page.disabled ? -1 : 0"
                     :class="page.path == '/' || { 'parent-active-class': $route.path.startsWith(page.path) }">
+            <Icon :name="'pixelarticons:' + page.icon" />
             {{ page.title }}
           </NuxtLink>
         </li>
@@ -33,6 +62,7 @@ const menuOpen = ref(false);
       <button @click="menuOpen = !menuOpen"
               aria-label="Open menu"
               id="mobile-navigation_button">
+        <Icon name="pixelarticons:menu" />
       </button>
     </div>
 
@@ -51,6 +81,7 @@ const menuOpen = ref(false);
                         :tabindex="page.disabled ? -1 : 0"
                         @click="menuOpen = false"
                         :class="page.path == '/' || { 'parent-active-class': $route.path.startsWith(page.path) }">
+                <Icon :name="'pixelarticons:' + page.icon" />
                 {{ page.title }}
               </NuxtLink>
             </li>
@@ -87,6 +118,8 @@ a {
   border: 1px solid var(--color-text);
   text-decoration: none;
 
+  font-family: var(--font-family-headings);
+
   &[aria-disabled="true"] {
     pointer-events: none;
     opacity: 0.25;
@@ -98,11 +131,17 @@ a {
   color: var(--color-link-active)
 }
 
+dialog#mobile-navigation_container,
+button#mobile-navigation_button {
+  display: none;
+}
+
 /********************************
 * Mobile
 ********************************/
 @media (max-width: 768px) {
   dialog#mobile-navigation_container {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -148,6 +187,7 @@ a {
   }
 
   button#mobile-navigation_button {
+    display: block;
     position: absolute;
     top: calc(var(--mobile-navigation_button_size) * -1 / 2);
     right: calc(50% - (var(--mobile-navigation_button_size) / 2));
@@ -159,6 +199,11 @@ a {
     border-radius: 50%;
     cursor: pointer;
     z-index: 200;
+
+    & .iconify {
+      font-size: calc(var(--mobile-navigation_button_size) / 2);
+      color: var(--color-background);
+    }
   }
 }
 </style>

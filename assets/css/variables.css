@@ -5,9 +5,9 @@
 :root {
   /* Colors
   ********************************/
-  --color-primary: #ea0075;
-  --color-text: #2f2f2f;
-  --color-background: #e9e9e9;
+  --color-primary: #7a593b;
+  --color-text: #343330;
+  --color-background: #e0ddd8;
 
   --color-separator: hsl(from var(--color-text) h s calc(l + 50));
 
@@ -21,11 +21,12 @@
   --color-background-hard: hsl(from var(--color-background) h s calc(l - 15));
 
   --color-link: var(--color-primary);
-  --color-link-active: var(--color-primary-hard);
+  --color-link-active: var(--color-primary);
+  --color-link-hover: var(--color-primary-soft);
 
   /* Typography
   ********************************/
-  --font-family-headings: "Helvetica Neue", sans-serif;
+  --font-family-headings: "Darinia", sans-serif;
   --font-family-text: "Helvetica Neue", sans-serif;
 
   --font-size: 1rem;

@@ -2,6 +2,11 @@
  * Typography
  ********************************/
 
+@font-face {
+  font-family: "Darinia";
+  src: url("/fonts/Darinia.ttf");
+}
+
 /* Headings
 ********************************/
 h1,
@@ -10,6 +15,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: var(--font-family-headings);
   margin-top: 0;
   font-weight: 500;
   line-height: 1.2;
@@ -40,11 +46,17 @@ a {
   color: var(--color-text);
 
   &:hover {
-    color: var(--color-primary);
+    color: var(--color-link-hover);
     text-decoration: underline;
   }
 
   &:active {
-    color: var(--color-primary);
+    color: var(--color-link-active);
   }
+}
+
+/* Icons
+********************************/
+.iconify {
+  margin-bottom: -3px;
 }

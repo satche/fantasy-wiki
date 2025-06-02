@@ -12,8 +12,13 @@ export default defineNuxtConfig({
   },
 
   css: ["~/assets/css/index.css"],
+  icon: {
+    serverBundle: {
+      collections: ["pixelarticons"]
+    }
+  },
 
-  modules: ['@nuxt/content', "@nuxt/image"],
+  modules: ['@nuxt/content', "@nuxt/image", "@nuxt/icon"],
 
   nitro: {
     plugins: ['~/scripts/copy-content-images']
