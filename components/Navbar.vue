@@ -30,6 +30,8 @@ const nav = [
     "disabled": true
   },
 ]
+
+const menuOpen = ref(false);
 </script>
 
 <template>
