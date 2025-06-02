@@ -49,8 +49,8 @@
   --space-s: calc(var(--space) * 0.8);
   --space-xs: calc(var(--space) * 0.6);
   --space-xxs: calc(var(--space) * 0.6);
-}
 
-body {
-  background: var(--color-background);
+  /* Transitions
+  ********************************/
+  --transition-delay: 0.2s;
 }

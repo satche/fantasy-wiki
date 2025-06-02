@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-    <div>
+    <div class="markdown">
       <ContentRenderer v-if="page" :value="page" />
     </div>
 </template>

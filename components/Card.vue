@@ -10,8 +10,9 @@ const props = defineProps({
 <template>
     <article>
         <NuxtLink :to="props.to">
-            <NuxtImg :src="props.img"
-                     alt="" />
+            <NuxtImg v-if="props.img"
+                    :src="props.img"
+                    alt="" />
             <h2>{{ props.title }}</h2>
             <p v-if="props.description">{{ props.description }}</p>
         </NuxtLink>

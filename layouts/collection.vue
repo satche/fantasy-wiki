@@ -6,9 +6,13 @@ const { data: page } = await useAsyncData(route.path, () => {
 </script>
 
 <template>
-  <div>
-    <ContentRenderer v-if="page"
-                     :value="page" />
-    <Collection :route="route.path" />
+  <div class="collection-layout">
+    <div class="markdown">
+      <ContentRenderer v-if="page"
+                       :value="page" />
+    </div>
+    <div class="collection-container">
+      <Collection :route="route.path" />
+    </div>
   </div>
 </template>

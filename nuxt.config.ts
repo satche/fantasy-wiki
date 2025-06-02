@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         lang: "ch-fr"
       }
     },
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: 'fade', mode: 'out-in' }
   },
 
   css: ["~/assets/css/index.css"],

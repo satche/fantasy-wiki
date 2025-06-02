@@ -4,6 +4,7 @@
 body {
   margin: 0;
 
+  background: var(--color-background);
   color: var(--color-text);
 
   font-family: var(--font-family-text);
@@ -15,4 +16,5 @@ body {
 main {
   max-width: 680px;
   margin: var(--space) auto;
+  padding: 0 var(--space);
 }

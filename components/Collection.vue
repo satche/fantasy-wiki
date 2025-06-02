@@ -24,7 +24,6 @@ const { data } = await useAsyncData<NavigationItem[]>(
        
           <Card :to="item.path"
               :title="item.title"
-              :description="item.description"
               :img="item.img" />
 
       </li>
