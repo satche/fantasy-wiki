@@ -96,15 +96,21 @@ const menuOpen = ref(false);
 /********************************
 * Desktop
 ********************************/
+nav#desktop-navigation {
+  height: 100%;
+  border-right: 1px solid var(--color-separator);
+}
+
 ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
 
 
 li {
+  width: 100%;
   list-style: none;
 
   &:has(a[aria-disabled="true"]) {
@@ -114,8 +120,8 @@ li {
 
 a {
   display: inline-block;
+  width: 100%;
   padding: 0.5rem 1rem;
-  border: 1px solid var(--color-text);
   text-decoration: none;
 
   font-family: var(--font-family-headings);
@@ -139,7 +145,13 @@ button#mobile-navigation_button {
 /********************************
 * Mobile
 ********************************/
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  header {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+  }
+
   dialog#mobile-navigation_container {
     display: block;
     position: fixed;

@@ -8,6 +8,7 @@ export default defineNuxtConfig({
         lang: "ch-fr"
       }
     },
+    rootId: "app",
     pageTransition: { name: 'fade', mode: 'out-in' }
   },
 
