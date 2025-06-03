@@ -1,11 +1,6 @@
 <script setup lang="ts">
 const nav = [
   {
-    "title": "Accueil",
-    "path": "/",
-    "icon": "home"
-  },
-  {
     "title": "Sessions",
     "path": "/sessions",
     "icon": "book",
@@ -26,7 +21,7 @@ const nav = [
   {
     "title": "Lore",
     "path": "/lore",
-    "icon": "book"
+    "icon": "visible"
   },
   {
     "title": "Joueurs",
@@ -45,6 +40,11 @@ const menuOpen = ref(false);
     <!-- Desktop navigation -->
     <nav id="desktop-navigation">
       <ul>
+        <li class="logo">
+          <NuxtLink to="/">
+            Asema
+          </NuxtLink>
+        </li>
         <li v-for="page in nav">
           <NuxtLink :to="page.path"
                     :aria-disabled="page.disabled ? true : false"
@@ -115,6 +115,10 @@ li {
 
   &:has(a[aria-disabled="true"]) {
     cursor: not-allowed;
+  }
+
+  &.logo a {
+    font-size: var(--font-size-l);
   }
 }
 

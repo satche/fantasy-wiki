@@ -7,6 +7,11 @@
   src: url("/fonts/Darinia.ttf");
 }
 
+@font-face {
+  font-family: "AtkinsonHyperlegible";
+  src: url("/fonts/AtkinsonHyperlegible.ttf");
+}
+
 /* Headings
 ********************************/
 h1,
