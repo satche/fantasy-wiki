@@ -3,17 +3,19 @@ interface NavigationItem {
   path: string;
   title?: string;
   description?: string;
-  img?: string;
+  meta?: {
+    img?: string;
+  },
   children?: NavigationItem[];
 }
 
-const props = defineProps<{route: String}>();
+const props = defineProps<{ route: String }>();
 
 const { data } = await useAsyncData<NavigationItem[]>(
   `${props.route}_navigation`, () => {
-  return queryCollectionNavigation('data', ['description', 'meta'])
-    .where("path", "LIKE", props.route + '%')
-})
+    return queryCollectionNavigation('data', ['description', 'meta'])
+      .where("path", "LIKE", props.route + '%')
+  })
 </script>
 
 <template>
@@ -21,10 +23,11 @@ const { data } = await useAsyncData<NavigationItem[]>(
     <ul v-if="data">
       <li v-for="item in data[0].children"
           :key="item.path">
-       
-          <Card :to="item.path"
+
+        <Card :to="item.path"
               :title="item.title"
-              :img="item.img" />
+              :description="item.description"
+              :img="item.meta?.img" />
 
       </li>
     </ul>

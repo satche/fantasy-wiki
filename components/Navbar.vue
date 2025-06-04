@@ -31,7 +31,7 @@ const nav = [
   },
 ]
 
-const menuOpen = ref(false);
+const menuOpen = ref<Boolean>(false);
 </script>
 
 <template>
@@ -48,8 +48,7 @@ const menuOpen = ref(false);
         <li v-for="page in nav">
           <NuxtLink :to="page.path"
                     :aria-disabled="page.disabled ? true : false"
-                    :tabindex="page.disabled ? -1 : 0"
-                    :class="page.path == '/' || { 'parent-active-class': $route.path.startsWith(page.path) }">
+                    :tabindex="page.disabled ? -1 : 0">
             <Icon :name="'pixelarticons:' + page.icon" />
             {{ page.title }}
           </NuxtLink>
@@ -79,8 +78,7 @@ const menuOpen = ref(false);
               <NuxtLink :to="page.path"
                         :aria-disabled="page.disabled ? true : false"
                         :tabindex="page.disabled ? -1 : 0"
-                        @click="menuOpen = false"
-                        :class="page.path == '/' || { 'parent-active-class': $route.path.startsWith(page.path) }">
+                        @click="menuOpen = false">
                 <Icon :name="'pixelarticons:' + page.icon" />
                 {{ page.title }}
               </NuxtLink>
@@ -89,6 +87,7 @@ const menuOpen = ref(false);
         </nav>
       </dialog>
     </Transition>
+    
   </header>
 </template>
 

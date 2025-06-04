@@ -5,6 +5,8 @@
 /* Links
 ********************************/
 .markdown {
+  width: 100%;
+
   /* Local heading links */
   & h1,
   h2,
