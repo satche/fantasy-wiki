@@ -31,7 +31,7 @@ const nav = [
   },
 ]
 
-const menuOpen = ref(false);
+const menuOpen = ref<Boolean>(false);
 </script>
 
 <template>
