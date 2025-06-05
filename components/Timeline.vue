@@ -1,46 +1,60 @@
 <script setup lang="ts">
-const timelineHasLoaded = ref(false);
+interface TimelineEvent {
+  title: string
+  href: string
+  description: string
+}
+
+const timelineHasLoaded = ref(false)
+const timelineEvents = ref<TimelineEvent[]>([])
 
 onMounted(async () => {
-  const timeline = document.querySelector('.timeline');
-  const listItems = timeline!.querySelectorAll('li>a');
+  await nextTick()
+  const timeline = document.querySelector('.timeline')
+  const timelineLinks = timeline!.querySelectorAll('li>a')
+  const events: TimelineEvent[] = []
 
-  // Format the links as headings
-  listItems.forEach(link => {
-    const title = link.textContent;
-    const href = link.getAttribute('href');
-    const el = `
-      <h2><a href='${href}'>${title}</a></h2>
-    `;
-    link.outerHTML = el;
-  })
+  for (const link of timelineLinks) {
+    const title = link.textContent || ''
+    const href = link.getAttribute('href') || ''
+    const page = await queryCollection('data').path(href).first()
+    const description = page?.description || ''
 
-  // Query for the new headings (since outerHTML replaced the old nodes)
-  const newListItems = timeline!.querySelectorAll('h2 > a');
-
-  // Add descriptions
-  for (const link of newListItems) {
-    const href = link.getAttribute('href');
-    const page = await queryCollection('data').path(href!).first();
-    const description = page?.description || '';
-    const el = `<p>${description}</p>`;
-    link.parentElement!.insertAdjacentHTML('afterend', el);
+    events.push({ title, href, description })
   }
 
-  timelineHasLoaded.value = true;
+  timelineEvents.value = events
+  timelineHasLoaded.value = true
 })
 </script>
 
 <template>
-  <div class="timeline"
-       v-show="timelineHasLoaded">
-    <slot />
+  <div class="timeline">
+
+    <ul v-if="timelineHasLoaded">
+      <li v-for="event in timelineEvents"
+          :key="event.href">
+        <h2>
+          <NuxtLink :to="event.href">{{ event.title }}</NuxtLink>
+        </h2>
+        <p>{{ event.description }}</p>
+      </li>
+    </ul>
+
+    <div v-else
+         class="timeline-loading">
+      Timeline is loading...
+      <div v-show="timelineHasLoaded">
+        <slot />
+      </div>
+    </div>
+
   </div>
 </template>
 
 <style scoped>
 .timeline {
-  --timeline-color: var(--color-text-soft);
+  --timeline-color: var(--color-primary);
   --timeline-padding: 30px;
   --timeline-width: 1px;
   --timeline-dot-size: 10px;
@@ -53,6 +67,7 @@ onMounted(async () => {
   margin: 0;
   padding-left: var(--timeline-padding);
 
+  /* Dot at the start of the timeline */
   &::before {
     content: '';
     width: var(--timeline-width);
@@ -62,6 +77,7 @@ onMounted(async () => {
     left: calc(var(--timeline-padding) / 2);
   }
 
+  /* Vertical line */
   &::after {
     content: '';
     width: calc(var(--timeline-dot-size) / 1.5);
@@ -72,42 +88,46 @@ onMounted(async () => {
     left: calc(var(--timeline-padding) / 2 - var(--timeline-dot-size) / 1.5 / 2 + var(--timeline-width) / 2);
     bottom: 0;
   }
-}
 
-:slotted(ul) {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-bottom: var(--space-xs);
+  /* Timeline event */
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: var(--space-xs);
 
-}
+    & li {
+      position: relative;
+      margin-bottom: 32px;
+      list-style: none;
 
-:slotted(ul) li {
-  position: relative;
-  margin-bottom: 32px;
-  list-style: none;
-}
+      /* Dot at each event */
+      &::before {
+        content: '';
+        width: var(--timeline-dot-size);
+        height: var(--timeline-dot-size);
+        background: var(--timeline-color);
+        border-radius: 50%;
+        position: absolute;
+        top: var(--timeline-dot-size);
+        left: calc(var(--timeline-padding) * -1 / 2 - var(--timeline-dot-size) / 2 + var(--timeline-width) / 2);
+      }
+    }
 
-:slotted(ul) li::before {
-  content: '';
-  width: var(--timeline-dot-size);
-  height: var(--timeline-dot-size);
-  background: var(--timeline-color);
-  border-radius: 50%;
-  position: absolute;
-  top: var(--timeline-dot-size);
-  left: calc(var(--timeline-padding) * -1 / 2 - var(--timeline-dot-size) / 2 + var(--timeline-width) / 2);
-}
+    & h2 {
+      margin-bottom: var(--space-xs);
 
-:slotted(ul) h2 {
-  margin-bottom: var(--space-xs);
-}
+    }
 
-:slotted(ul) p {
-  margin: 0;
-}
+    & p {
+      margin: 0;
 
-:slotted(ul) a {
-  text-decoration: none;
+    }
+
+    & a {
+      text-decoration: none;
+
+    }
+  }
 }
 </style>

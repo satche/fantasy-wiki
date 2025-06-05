@@ -49,7 +49,7 @@
   --space-m: var(--space);
   --space-s: calc(var(--space) * 0.8);
   --space-xs: calc(var(--space) * 0.6);
-  --space-xxs: calc(var(--space) * 0.6);
+  --space-xxs: calc(var(--space) * 0.2);
 
   /* Transitions
   ********************************/

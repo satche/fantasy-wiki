@@ -35,7 +35,7 @@ const menuOpen = ref<Boolean>(false);
 </script>
 
 <template>
-  <header>
+  <div id="navigation-container">
 
     <!-- Desktop navigation -->
     <nav id="desktop-navigation">
@@ -87,14 +87,18 @@ const menuOpen = ref<Boolean>(false);
         </nav>
       </dialog>
     </Transition>
-    
-  </header>
+
+  </div>
 </template>
 
 <style scoped>
 /********************************
 * Desktop
 ********************************/
+#navigation-container {
+  height: 100%;
+}
+
 nav#desktop-navigation {
   height: 100%;
   border-right: 1px solid var(--color-separator);
@@ -149,7 +153,7 @@ button#mobile-navigation_button {
 * Mobile
 ********************************/
 @media (max-width: 600px) {
-  header {
+  #navigation-container {
     position: fixed;
     bottom: 0;
     z-index: 100;

@@ -1,6 +1,6 @@
 <script setup>
 const route = useRoute()
-const { data: page } = await useAsyncData(route.path, () => {
+const { data: page } = await useAsyncData(`${route.path}_page`, () => {
   return queryCollection('data').path(route.path).first()
 })
 
@@ -17,7 +17,10 @@ layout = layout || "default"
 
 <template>
   <main>
-    <NuxtLayout :name="layout" fallback="default" :page="page" >
+    <Breadcrumbs />
+    <NuxtLayout :name="layout"
+                fallback="default"
+                :page="page">
       <slot />
     </NuxtLayout>
   </main>
