@@ -3,9 +3,9 @@ const route = useRoute();
 
 const breadcrumbs = computed(() => {
     const paths = route.path.split('/').filter(Boolean);
-    if (paths.length <= 1) return [];
     let fullPath = '';
-    return paths.map((segment, idx) => {
+
+    const segments = paths.map((segment, idx) => {
         fullPath += '/' + segment;
         return {
             text: segment.charAt(0).toUpperCase() + segment.slice(1),
@@ -13,24 +13,33 @@ const breadcrumbs = computed(() => {
             active: idx === paths.length - 1
         };
     });
-});
+
+    // Add root breadcrumb at the start
+    return segments;
+})
 </script>
 
 <template>
-    <nav>
+    <nav v-if="breadcrumbs.length">
         <ul>
+            <li>
+                <NuxtLink to="/">
+                    <Icon name="pixelarticons:home" />
+                </NuxtLink>
+                <span class="separator"
+                      aria-hidden="true">/</span>
+            </li>
             <li v-for="(crumb, index) in breadcrumbs"
                 :key="index">
                 <template v-if="!crumb.active">
-                    <NuxtLink :to="crumb.to"
-                              :class="{ active: crumb.active }">{{ crumb.text }}</NuxtLink>
+                    <NuxtLink :to="crumb.to">{{ crumb.text }}</NuxtLink>
+                    <span class="separator"
+                          aria-hidden="true">/</span>
                 </template>
                 <template v-else>
-                    <span class="active">{{ crumb.text }}</span>
+                    <span>{{ crumb.text }}</span>
                 </template>
-                <span v-if="!crumb.active"
-                      class="separator"
-                      aria-hidden="true">/</span>
+
             </li>
         </ul>
     </nav>
@@ -59,7 +68,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        text-decoration: underline;
+        color: var(--color-primary);
     }
 }
 

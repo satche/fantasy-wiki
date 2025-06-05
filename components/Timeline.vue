@@ -8,7 +8,7 @@ interface TimelineEvent {
 const timelineHasLoaded = ref(false)
 const timelineEvents = ref<TimelineEvent[]>([])
 
-onMounted(async () => {
+const renderTimeline = async () => {
   await nextTick()
   const timeline = document.querySelector('.timeline')
   const timelineLinks = timeline!.querySelectorAll('li>a')
@@ -25,7 +25,9 @@ onMounted(async () => {
 
   timelineEvents.value = events
   timelineHasLoaded.value = true
-})
+}
+
+onMounted(renderTimeline)
 </script>
 
 <template>
