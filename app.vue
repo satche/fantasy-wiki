@@ -13,6 +13,7 @@
 main {
   width: 100%;
   max-width: 680px;
+  height: 100%;
   margin: var(--space) auto;
   padding: 0 var(--space);
 }
@@ -22,10 +23,6 @@ main {
     display: block;
     grid-template-columns: none;
     height: auto;
-  }
-
-  main {
-    width: 100%;
   }
 }
 </style>
