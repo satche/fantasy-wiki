@@ -1,6 +1,0 @@
----
-layout: homepage
----
-
-# Wiki Asema
-
