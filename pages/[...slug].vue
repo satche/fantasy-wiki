@@ -30,7 +30,7 @@ layout = layout || "default"
 <template>
   <main>
     <Breadcrumbs />
-    <NuxtLayout :name="layout"
+    <NuxtLayout name="default"
                 fallback="default"
                 :page="page">
       <slot />

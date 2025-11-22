@@ -35,16 +35,16 @@
   --font-size-xl: calc(var(--font-size) * 1.8);
   --font-size-l: calc(var(--font-size) * 1.4);
   --font-size-m: var(var(--font-size));
-  --font-size-s: calc(var(font-size) * 0.8rem);
-  --font-size-xs: calc(var(font-size) * 0.6rem);
-  --font-size-xxs: calc(var(font-size) * 0.6rem);
+  --font-size-s: calc(var(--font-size) * 0.9);
+  --font-size-xs: calc(var(--font-size) * 0.8);
+  --font-size-xxs: calc(var(--font-size) * 0.7);
 
   /* Spacing
   ********************************/
   --space: 1rem;
 
-  --space-xxl: calc(var(--space) * 4.5);
-  --space-xl: calc(var(--space) * 2.5);
+  --space-xxl: calc(var(--space) * 3.0);
+  --space-xl: calc(var(--space) * 2.2);
   --space-l: calc(var(--space) * 1.5);
   --space-m: var(--space);
   --space-s: calc(var(--space) * 0.8);
