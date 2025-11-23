@@ -7,7 +7,7 @@
   ********************************/
   --color-primary: #7a593b;
   --color-text: #343330;
-  --color-background: #e0ddd8;
+  --color-background: #fcfcfc;
 
   --color-separator: hsl(from var(--color-text) h s calc(l + 50));
 

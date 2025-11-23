@@ -46,11 +46,6 @@ const breadcrumbs = computed(() => {
 </template>
 
 <style scoped>
-nav {
-    position: absolute;
-    margin: var(--space-xxs) 0;
-}
-
 ul {
     padding: 0;
     margin: 0;
