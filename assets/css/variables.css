@@ -31,9 +31,9 @@
 
   --font-size: 1rem;
 
-  --font-size-xxl: calc(var(--font-size) * 2.5);
-  --font-size-xl: calc(var(--font-size) * 1.8);
-  --font-size-l: calc(var(--font-size) * 1.4);
+  --font-size-xxl: calc(var(--font-size) * 2.0);
+  --font-size-xl: calc(var(--font-size) * 1.6);
+  --font-size-l: calc(var(--font-size) * 1.2);
   --font-size-m: var(var(--font-size));
   --font-size-s: calc(var(--font-size) * 0.9);
   --font-size-xs: calc(var(--font-size) * 0.8);

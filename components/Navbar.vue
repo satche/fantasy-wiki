@@ -30,15 +30,13 @@ const nav = [
     "disabled": true
   },
 ]
-
-const menuOpen = ref<Boolean>(false);
 </script>
 
 <template>
   <div id="navigation-container">
 
     <!-- Desktop navigation -->
-    <nav id="desktop-navigation">
+    <nav>
       <ul>
         <li class="logo">
           <NuxtLink to="/">
@@ -56,38 +54,6 @@ const menuOpen = ref<Boolean>(false);
       </ul>
     </nav>
 
-    <!-- Hamburger button -->
-    <div id="mobile-navigation_button_container">
-      <button @click="menuOpen = !menuOpen"
-              aria-label="Open menu"
-              id="mobile-navigation_button">
-        <Icon name="pixelarticons:menu" />
-      </button>
-    </div>
-
-    <!-- Dialog mobile navigation -->
-    <Transition name="fade">
-      <dialog v-if="menuOpen"
-              open
-              @close="menuOpen = false"
-              id="mobile-navigation_container">
-        <nav id="mobile-navigation">
-          <ul>
-            <li v-for="page in nav"
-                :key="page.path">
-              <NuxtLink :to="page.path"
-                        :aria-disabled="page.disabled ? true : false"
-                        :tabindex="page.disabled ? -1 : 0"
-                        @click="menuOpen = false">
-                <Icon :name="'pixelarticons:' + page.icon" />
-                {{ page.title }}
-              </NuxtLink>
-            </li>
-          </ul>
-        </nav>
-      </dialog>
-    </Transition>
-
   </div>
 </template>
 
@@ -99,12 +65,14 @@ const menuOpen = ref<Boolean>(false);
   height: 100%;
 }
 
-nav#desktop-navigation {
+nav {
   height: 100%;
   border-right: 1px solid var(--color-separator);
 }
 
 ul {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -153,86 +121,34 @@ button#mobile-navigation_button {
 * Mobile
 ********************************/
 @media (max-width: 600px) {
-  #navigation-container {
-    position: fixed;
-    bottom: 0;
-    z-index: 100;
+  nav {
+    border-bottom: 1px solid var(--color-separator);
   }
 
-  dialog#mobile-navigation_container {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-background);
-    border: none;
-    padding: 1rem;
-    z-index: 100;
-  }
-
-  nav#desktop-navigation {
+  .logo {
     display: none;
   }
 
   ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  li {
-    width: 100%;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   a {
-    max-width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-xs);
+
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-xs);
+    font-weight: bold;
   }
 
-  #mobile-navigation_button_container {
-    --mobile-navigation_button_padding: 1rem;
-    --mobile-navigation_button_size: 3rem;
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 200;
-    background: var(--color-background-hard);
-    width: 100%;
-    height: calc(var(--mobile-navigation_button_size) / 2);
-    padding-bottom: var(--mobile-navigation_button_padding);
-  }
-
-  button#mobile-navigation_button {
+  .iconify {
     display: block;
-    position: absolute;
-    top: calc(var(--mobile-navigation_button_size) * -1 / 2);
-    right: calc(50% - (var(--mobile-navigation_button_size) / 2));
-    width: var(--mobile-navigation_button_size);
-    height: var(--mobile-navigation_button_size);
-    ;
-    background-color: var(--color-text);
-    border: 5px solid var(--color-background);
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 200;
-
-    & .iconify {
-      font-size: calc(var(--mobile-navigation_button_size) / 2);
-      color: var(--color-background);
-    }
+    margin-bottom: var(--space-xxs);
+    font-size: var(--font-size-l);
   }
-}
-
-.router-link-active,
-.parent-active-class {
-  color: var(--color-link-active)
-}
-
-.router-link-active,
-.parent-active-class {
-  color: var(--color-link-active)
 }
 </style>
