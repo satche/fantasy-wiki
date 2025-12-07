@@ -8,7 +8,7 @@ const breadcrumbs = computed(() => {
     const segments = paths.map((segment, idx) => {
         fullPath += '/' + segment;
         return {
-            text: segment.charAt(0).toUpperCase() + segment.slice(1),
+            text: segment.charAt(0) + segment.slice(1),
             to: fullPath,
             active: idx === paths.length - 1
         };
@@ -46,11 +46,6 @@ const breadcrumbs = computed(() => {
 </template>
 
 <style scoped>
-nav {
-    position: absolute;
-    margin: var(--space-xs) 0;
-}
-
 ul {
     padding: 0;
     margin: 0;
@@ -61,6 +56,7 @@ ul {
 
 li,
 a {
+    font-size: var(--font-size-s);
     color: var(--color-text-soft);
 }
 

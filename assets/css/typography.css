@@ -28,14 +28,17 @@ h6 {
 
 h1 {
   font-size: var(--font-size-xxl);
+  margin-bottom: var(--space-l);
 }
 
 h2 {
   font-size: var(--font-size-xl);
+  margin-bottom: var(--space-m);
 }
 
 h3 {
   font-size: var(--font-size-l);
+  margin-bottom: var(--space-xs);
 }
 
 h4,

@@ -5,6 +5,7 @@
 .nitro
 .cache
 dist
+
 # Duplicate with content/**/assets
 public/assets
 
@@ -24,8 +25,9 @@ logs
 .env
 .env.*
 !.env.example
+deploy.sh
 
 # Obsidian
 .obsidian
 .trash
-content/gm
+content

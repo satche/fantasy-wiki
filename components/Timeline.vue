@@ -36,9 +36,7 @@ onMounted(renderTimeline)
     <ul v-if="timelineHasLoaded">
       <li v-for="event in timelineEvents"
           :key="event.href">
-        <h2>
           <NuxtLink :to="event.href">{{ event.title }}</NuxtLink>
-        </h2>
         <p>{{ event.description }}</p>
       </li>
     </ul>
@@ -127,8 +125,7 @@ onMounted(renderTimeline)
     }
 
     & a {
-      text-decoration: none;
-
+      font-weight: bold;
     }
   }
 }

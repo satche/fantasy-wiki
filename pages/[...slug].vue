@@ -10,12 +10,17 @@ definePageMeta({
   }
 })
 
-// Apply a layout based on the page's metadata
 const route = useRoute()
 const { data: page } = await useAsyncData(`${route.path}_page`, () => {
-  return queryCollection('data').path(route.path).first()
+  return queryCollection('data').path(route.path).first() || {}
 })
 
+/********************************
+* WIP
+********************************/
+
+/**
+// Apply a layout based on the page's metadata
 const defaultCollectionLayouts = ["lore"]
 
 let layout = page.value?.meta?.layout
@@ -25,12 +30,14 @@ if (defaultCollectionLayouts.includes(route.path.replace(/^\//, "")) && layout =
 }
 
 layout = layout || "default"
+**/
+
 </script>
 
 <template>
   <main>
     <Breadcrumbs />
-    <NuxtLayout :name="layout"
+    <NuxtLayout name="default"
                 fallback="default"
                 :page="page">
       <slot />

@@ -1,3 +1,7 @@
+<script setup>
+import '~/assets/css/index.css'
+</script>
+
 <template>
   <Navbar />
   <NuxtPage />
