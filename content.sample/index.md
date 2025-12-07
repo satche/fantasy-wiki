@@ -1,6 +1,3 @@
----
-layout: homepage
----
+# Homepage
 
-# Wiki Asema
-
+This is the entry point of the wiki
