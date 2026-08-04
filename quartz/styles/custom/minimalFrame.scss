@@ -1,0 +1,21 @@
+@use "../variables.scss" as *;
+
+.page[data-frame="minimal"] > #quartz-body:has(> .topbar) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  & .center.minimal,
+  & footer {
+    margin: 0 auto;
+    min-width: 500px;
+    max-width: 960px;
+  }
+
+  & footer {
+      margin-top: auto;
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+      border-top: 1px solid var(--lightgray);
+  }
+}

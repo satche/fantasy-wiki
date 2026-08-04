@@ -2,6 +2,9 @@
 @use "./custom/icons.scss";
 @use "./custom/markdown.scss";
 
+// Frame layouts
+@use "./custom/minimalFrame.scss";
+
 // Components
 @use "./custom/navbar.scss";
 @use "./custom/page-header.scss";

@@ -2,7 +2,7 @@
 @use "../variables.scss" as *;
 @use "../custom/icons.scss" as *;
 
-/* Grid adjustment where navbar is present */
+/* Default frame layout */
 #quartz-body:has(> .topbar) {
   grid-template-areas:
     "grid-navbar      grid-navbar      grid-navbar"

@@ -12,6 +12,9 @@ npm install
 npm run dev
 ```
 
+> [!NOTE]
+> If npm installation fail, try with `--legacy-peer-deps` flag
+
 You should also setup navbar plugin. For now, you have to do it manually:
 
 ```shell

@@ -38,7 +38,13 @@
 }
 
 #quartz-body > footer {
+  margin-top: auto;
+
   & > p {
     display: none;
+  }
+
+  & > ul {
+    margin: 0;
   }
 }
