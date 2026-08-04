@@ -1,0 +1,46 @@
+@use "../../styles/variables.scss" as *;
+
+.toc {
+  .toc-header {
+    pointer-events: none;
+    border-bottom: 1px solid var(--lightgray);
+
+    h3 {
+      font-family: var(--bodyFont);
+      font-size: 1.25em;
+      color: var(--gray);
+      margin: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .fold {
+      display: none;
+    }
+  }
+
+  .toc-content {
+    li {
+      padding-left: 0 !important;
+
+      & a {
+        color: var(--darkgray);
+        font-size: 0.9rem;
+        font-weight: normal;
+      }
+    }
+    li.depth-0 {
+      display: none;
+    }
+    li.depth-2 {
+      padding-left: 1rem;
+      &::before {
+        content: "𜰞";
+        color: var(--lightgray);
+        margin-right: 6px;
+        font-size: 1.1rem;
+        display: inline-block;
+        transform: translateY(-10px);
+      }
+    }
+  }
+}

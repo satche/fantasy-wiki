@@ -1,0 +1,40 @@
+@use "../variables.scss" as *;
+@use "./icons.scss" as *;
+
+// Smooth transition
+html,
+body,
+a,
+button {
+  transition-property: color, background, background-color, border-color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+}
+
+// PIXEL ICON
+button.darkmode {
+  min-width: 25px;
+  font-family: "pixelart-icons-font" !important;
+  font-size: $iconSize;
+  text-align: center;
+  transition: color ease-in 200ms;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:hover {
+      color: var(--tertiary);
+  }
+
+  svg {
+    display: none !important;
+  }
+}
+
+.darkmode:has(.dayIcon)::before {
+  content: $pixel-icon-sun-alt;
+}
+
+:root[saved-theme="dark"] .darkmode:has(.nightIcon)::before {
+  content: $pixel-icon-moon;
+}

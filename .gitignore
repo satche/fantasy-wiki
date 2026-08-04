@@ -1,33 +1,16 @@
-# Nuxt dev/build outputs
-.output
-.data
-.nuxt
-.nitro
-.cache
-dist
-
-# Duplicate with content/**/assets
-public/assets
-
-# Node dependencies
-node_modules
-
-# Logs
-logs
-*.log
-
-# Misc
 .DS_Store
-.fleet
-.idea
-
-# Local env files
-.env
-.env.*
-!.env.example
-deploy.sh
-
-# Obsidian
+.gitignore
+node_modules
+public
+prof
+tsconfig.tsbuildinfo
 .obsidian
-.trash
+.quartz-cache
+private/
+.replit
+replit.nix
+.quartz/
+quartz/cli/tui/dist/
+.turbo/
+docs
 content

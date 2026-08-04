@@ -1,0 +1,352 @@
+# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+configuration:
+  pageTitle: Asema
+  pageTitleSuffix: " — Asema"
+  enableSPA: true
+  enablePopovers: true
+  analytics: null
+  locale: fr-FR
+  baseUrl: asema.thomas-robert.com
+  ignorePatterns:
+    - private
+    - templates
+    - .obsidian
+  theme:
+    fontOrigin: googleFonts
+    cdnCaching: true
+    typography:
+      header: Jacquard 12
+      body: Atkinson Hyperlegible
+      code: Atkinson Hyperlegible Mono
+    colors:
+      lightMode:
+        light: "#f2f2f2"
+        lightgray: "#b8b8b8"
+        gray: "#8f8e8e"
+        darkgray: "##343330"
+        dark: "##343330"
+        secondary: "#ad7c50"
+        tertiary: "#d4ac87"
+        highlight: rgba(143, 159, 169, 0.15)
+        textHighlight: "##b8b8b8"
+      darkMode:
+        light: "#181817"
+        lightgray: "#474747"
+        gray: "#828282"
+        darkgray: "#c2c2c2"
+        dark: "#fcfcfc"
+        secondary: "#8a7870"
+        tertiary: "#d4b9ad"
+        highlight: "#272726"
+        textHighlight: "#272726"
+
+plugins:
+  # GENERAL
+  - source: "@quartz-community/description"
+    enabled: true
+  - source: "@quartz-community/crawl-links"
+    enabled: true
+    options:
+      markdownLinkResolution: shortest
+    order: 60
+  - source: "@quartz-community/quartz-fonts"
+    enabled: true
+    options:
+      fontOrigin: local
+      title: '"cobblestone", serif'
+      header: '"cobblestone", serif'
+      body: '"atikson", sans-serif'
+      code: '"hack", monospace'
+
+  # NAVBAR
+  - source: "@quartz-community/page-title"
+    enabled: true
+    layout:
+      position: navbar
+      priority: 0
+  - source: ./plugins/navbar
+    enabled: true
+    options:
+      links:
+        #- label: Lieux
+        #  href: /lieux
+        - label: Lore
+          href: /lore
+    layout:
+      position: navbar
+      priority: 10
+  - source: "@quartz-community/search"
+    enabled: true
+    layout:
+      position: navbar
+      priority: 20
+      group: toolbar
+  - source: "@quartz-community/darkmode"
+    enabled: true
+    layout:
+      position: navbar
+      priority: 30
+      group: toolbar
+  - source: "@quartz-community/reader-mode"
+    enabled: false
+    layout:
+      position: navbar
+      priority: 40
+      group: toolbar
+
+  # PAGE HEADER
+  - source: "@quartz-community/breadcrumbs"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 0
+      condition: not-index
+  - source: "@quartz-community/article-title"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 20
+  - source: "@quartz-community/created-modified-date"
+    enabled: true
+    options:
+      defaultDateType: modified
+      priority:
+        - frontmatter
+        - git
+        - filesystem
+    layout:
+      position: beforeBody
+      priority: 50
+
+  # (2 TOCs for responsive purpose)
+  - source: "@quartz-community/table-of-contents"
+    enabled: false # hide in mobile, for now
+    layout:
+      position: beforeBody
+      priority: 999
+      display: mobile-only
+  - source: "@quartz-community/table-of-contents"
+    enabled: true
+    layout:
+      position: left
+      display: desktop-only
+
+  # PAGES
+  - source: "@quartz-community/canvas-page"
+    enabled: true
+  - source: "@quartz-community/content-page"
+    enabled: true
+  - source: "@quartz-community/folder-page"
+    enabled: true
+    options:
+      showFolderCount: false
+      showSubfolders: false
+  - source: "@quartz-community/tag-page"
+    enabled: true
+
+  # MARKDOWN
+  - source: "@quartz-community/obsidian-flavored-markdown"
+    enabled: true
+    options:
+      enableInHtmlEmbed: true
+      enableCheckbox: true
+  - source: "@quartz-community/github-flavored-markdown"
+    enabled: true
+  - source: "@quartz-community/syntax-highlighting"
+    enabled: true
+    options:
+      theme:
+        light: github-light
+        dark: github-dark
+      keepBackground: false
+    order: 20
+  - source: "@quartz-community/latex"
+    enabled: true
+    options:
+      renderEngine: katex
+    order: 80
+  - source: "@quartz-community/hard-line-breaks"
+    enabled: true
+    order: 90
+  - source: "@quartz-community/remove-draft"
+    enabled: true
+  - source: "@quartz-community/alias-redirects"
+    enabled: true
+  - source: "@quartz-community/content-index"
+    enabled: true
+    options:
+      enableSiteMap: true
+      enableRSS: true
+
+  - source: "@quartz-community/favicon"
+    enabled: true
+  - source: "@quartz-community/og-image"
+    enabled: false
+  - source: "@quartz-community/cname"
+    enabled: true
+
+  - source: "@quartz-community/explorer"
+    enabled: false
+    layout:
+      position: beforeBody
+      priority: 100
+  - source: "@quartz-community/content-meta"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 100
+    options:
+      showReadingTime: false
+  - source: "@quartz-community/tag-list"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 30
+  - source: "@quartz-community/comments"
+    enabled: false
+    options:
+      provider: giscus
+      options: {}
+    layout:
+      position: afterBody
+      priority: 10
+  - source: "@quartz-community/recent-notes"
+    enabled: false
+  - source: "@quartz-community/spacer"
+    enabled: false
+    options: {}
+    order: 25
+    layout:
+      position: left
+      priority: 25
+      display: mobile-only
+  - source: "@quartz-community/bases-page"
+    enabled: true
+    options: {}
+    order: 50
+  - source: "@quartz-community/note-properties"
+    enabled: true
+    options:
+      includeAll: false
+      includedProperties:
+        - description
+        - region
+      excludedProperties: []
+      hidePropertiesView: false
+      delimiters: ---
+      language: yaml
+    order: 5
+    layout:
+      position: beforeBody
+      priority: 15
+      display: all
+  - source: "@quartz-community/unlisted-pages"
+    enabled: true
+    options: {}
+    order: 45
+  - source: "@quartz-community/encrypted-pages"
+    enabled: true
+    options:
+      iterations: 600000
+      passwordField: password
+      unlistWhenEncrypted: false
+      outputPath: static/encryptedContentIndex.json
+    order: 900
+  - source: "@quartz-community/stacked-pages"
+    enabled: false
+    layout:
+      position: afterBody
+      priority: 50
+      display: all
+    options:
+      maxTabs: 8
+      mobileBreakpoint: 800
+      showSpines: true
+      animateTransitions: true
+
+  # FOOTER
+  - source: "@quartz-community/graph"
+    enabled: true
+    layout:
+      group: footer
+      position: afterBody
+      priority: 20
+      groupOptions:
+        align: start
+        grow: true
+  - source: "@quartz-community/backlinks"
+    enabled: true
+    layout:
+      group: footer
+      position: afterBody
+      priority: 30
+      display: desktop-only
+      groupOptions:
+        align: start
+        shrink: false
+  # (seconde backlinks component to fix responsivness)
+  - source: "@quartz-community/backlinks"
+    enabled: true
+    layout:
+      position: afterBody
+      priority: 30
+      display: mobile-only
+      groupOptions:
+        align: start
+        shrink: false
+  - source: "@quartz-community/footer"
+    enabled: true
+    options:
+      links:
+        GitHub: https://github.com/satche/fantasy-wiki
+    layout:
+      position: footer
+      priority: 50
+
+  # DISABLED
+  - source: "@quartz-themes/core"
+    enabled: false
+    options:
+      theme: tokyo-night
+      mode: both
+  - source: "@quartz-community/ox-hugo"
+    enabled: false
+    order: 91
+  - source: "@quartz-community/roam"
+    enabled: false
+    order: 92
+  - source: "@quartz-community/explicit-publish"
+    enabled: false
+  - source: "@quartz-community/citations"
+    enabled: false
+    order: 85
+
+layout:
+  groups:
+    toolbar:
+      priority: 99
+      direction: row
+      gap: 0.5rem
+    footer:
+      priority: 10
+      gap: 1.5rem
+
+  byPageType:
+    "404":
+      positions:
+        beforeBody: []
+        left: []
+        right: []
+    content: {}
+    folder:
+      exclude:
+        - reader-mode
+      positions:
+        right: []
+    tag:
+      exclude:
+        - reader-mode
+      positions:
+        right: []
+    canvas: {}
+    bases: {}

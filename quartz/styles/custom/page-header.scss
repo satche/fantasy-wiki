@@ -1,0 +1,39 @@
+@use "../variables.scss";
+
+.page-header {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h1.article-title {
+  line-height: 2.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.content-meta {
+  font-family: var(--codeFont);
+  color: var(--gray);
+}
+
+/* Breadcrumbs */
+
+.breadcrumb-container {
+  & .breadcrumb-element {
+    & a {
+      color: var(--gray);
+      font-weight: normal;
+      font-size: 0.9rem;
+
+      &:hover {
+        color: var(--tertiary);
+      }
+    }
+    & p {
+      font-family: var(--codeFont);
+      font-weight: normal;
+      font-size: 0.75rem;
+      color: var(--lightgray);
+      margin-top: 1px;
+    }
+  }
+}

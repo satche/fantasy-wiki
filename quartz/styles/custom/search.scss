@@ -1,0 +1,66 @@
+@use "../variables.scss" as *;
+@use "./icons.scss" as *;
+
+.search {
+  & > button.search-button {
+    min-width: 25px;
+    padding: 0;
+    border: none;
+    font-family: "pixelart-icons-font" !important;
+    font-size: $iconSize;
+    text-align: center;
+    transition: color ease-in 500ms;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &:hover {
+        color: var(--tertiary);
+    }
+
+    &::before {
+      content: $pixel-icon-search;
+    }
+
+    & > p {
+      display: none; // "Search" input text
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  & > .search-container {
+    // WIP: Animation
+    display: none;
+    backdrop-filter: blur(0px);
+
+    transition:
+      backdrop-filter 500ms,
+      display 500ms allow-discrete;
+
+    &.active {
+      display: block;
+      backdrop-filter: blur(6px);
+    }
+
+    // Search results
+    & > .search-space > .search-layout {
+      & > .results-container .result-card > h3.card-title {
+        color: var(--dark);
+        font-size: 1.7rem;
+      }
+      .highlight {
+        // add a bit of opacity to the background color
+        background: rgb(from var(--secondary) r g b/calc(alpha - 0.6));
+      }
+    }
+  }
+}
+
+@starting-style {
+  .search-container.active {
+    display: block;
+    backdrop-filter: blur(0px);
+  }
+}

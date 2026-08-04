@@ -1,0 +1,17 @@
+export { Navbar, Navbar as default } from "./components/Navbar"
+
+// Re-export shared types from @quartz-community/types
+export type {
+  QuartzComponent,
+  QuartzComponentProps,
+  QuartzComponentConstructor,
+  StringResource,
+  QuartzTransformerPlugin,
+  QuartzFilterPlugin,
+  QuartzEmitterPlugin,
+  QuartzPageTypePlugin,
+  QuartzPageTypePluginInstance,
+  PageMatcher,
+  PageGenerator,
+  VirtualPage,
+} from "@quartz-community/types";

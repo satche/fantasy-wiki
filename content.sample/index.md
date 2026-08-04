@@ -1,3 +1,3 @@
 # Homepage
 
-This is the entry point of the wiki
+This is an example of a homepage.

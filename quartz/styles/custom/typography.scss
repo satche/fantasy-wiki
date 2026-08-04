@@ -1,0 +1,39 @@
+/* Note: this cover global typography
+** We define font-family here and use them in `quartz.config.yaml`
+** Check each component's css file to change its font
+** Icons are in icons.css
+*/
+
+@font-face {
+  font-family: "cobblestone";
+  src: url("static/fonts/cobblestone.ttf");
+}
+
+@font-face {
+  font-family: "atikson";
+  src: url("static/fonts/atkinson-hyperlegible.ttf");
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--darkgray);
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}

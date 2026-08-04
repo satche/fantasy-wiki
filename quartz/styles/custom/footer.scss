@@ -1,0 +1,44 @@
+@use "../variables.scss" as *;
+
+.page-footer {
+  h3 {
+    font-family: var(--bodyFont);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--gray);
+  }
+
+  & .backlinks {
+    ul li {
+      &::before {
+        content: "𜰞";
+        color: var(--lightgray);
+        margin-right: 2px;
+        font-size: 1rem;
+        display: inline-block;
+        transform: translateY(-9px);
+      }
+      &.overflow-end::before {
+        display: none;
+      }
+
+      & > a {
+        font-size: 0.9rem;
+        font-weight: normal;
+      }
+    }
+  }
+
+  & .flex-component {
+    & > div {
+      /* Fix left component to outgrow right component */
+      min-width: 0;
+    }
+  }
+}
+
+#quartz-body > footer {
+  & > p {
+    display: none;
+  }
+}
