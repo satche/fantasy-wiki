@@ -1,15 +1,13 @@
 {
-  "name": "@jackyzha0/quartz",
-  "description": "🌱 publish your digital garden and notes as a website",
+  "name": "fantasy-wiki",
+  "description": "A static wiki generator for worldbuilding, based on Quartz",
   "private": true,
-  "version": "5.0.0",
-  "type": "module",
-  "author": "jackyzha0 <j.zhao2k19@gmail.com>",
+  "version": "0.1.0",
+  "author": "Satche",
   "license": "MIT",
-  "homepage": "https://quartz.jzhao.xyz",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jackyzha0/quartz.git"
+    "url": "https://github.com/satche/fantasy-wiki"
   },
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
@@ -29,10 +27,9 @@
   "keywords": [
     "site generator",
     "ssg",
-    "digital-garden",
     "markdown",
-    "blog",
-    "quartz"
+    "quartz",
+    "wiki"
   ],
   "bin": {
     "quartz": "./quartz/bootstrap-cli.mjs"
