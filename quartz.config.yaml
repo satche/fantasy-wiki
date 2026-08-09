@@ -39,16 +39,13 @@ configuration:
         tertiary: "#d4b9ad"
         highlight: "#272726"
         textHighlight: "#272726"
-
 plugins:
-  # GENERAL
   - source: "@quartz-community/description"
     enabled: true
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
       markdownLinkResolution: relative
-    order: 60
   - source: "@quartz-community/quartz-fonts"
     enabled: true
     options:
@@ -57,19 +54,15 @@ plugins:
       header: '"cobblestone", serif'
       body: '"atikson", sans-serif'
       code: '"hack", monospace'
-
-  # NAVBAR
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
       position: navbar
       priority: 0
-  - source: ./plugins/navbar
+  - source: github:satche/quartz-navbar
     enabled: true
     options:
       links:
-        #- label: Lieux
-        #  href: /lieux
         - label: Lore
           href: /lore
     layout:
@@ -93,8 +86,6 @@ plugins:
       position: navbar
       priority: 40
       group: toolbar
-
-  # PAGE HEADER
   - source: "@quartz-community/breadcrumbs"
     enabled: true
     layout:
@@ -117,10 +108,8 @@ plugins:
     layout:
       position: beforeBody
       priority: 50
-
-  # (2 TOCs for responsive purpose)
   - source: "@quartz-community/table-of-contents"
-    enabled: false # hide in mobile, for now
+    enabled: false
     layout:
       position: beforeBody
       priority: 999
@@ -130,8 +119,6 @@ plugins:
     layout:
       position: left
       display: desktop-only
-
-  # PAGES
   - source: "@quartz-community/canvas-page"
     enabled: true
   - source: "@quartz-community/content-page"
@@ -143,8 +130,6 @@ plugins:
       showSubfolders: false
   - source: "@quartz-community/tag-page"
     enabled: true
-
-  # MARKDOWN
   - source: "@quartz-community/obsidian-flavored-markdown"
     enabled: true
     options:
@@ -177,14 +162,12 @@ plugins:
     options:
       enableSiteMap: true
       enableRSS: true
-
   - source: "@quartz-community/favicon"
     enabled: true
   - source: "@quartz-community/og-image"
     enabled: false
   - source: "@quartz-community/cname"
     enabled: true
-
   - source: "@quartz-community/explorer"
     enabled: false
     layout:
@@ -263,8 +246,6 @@ plugins:
       mobileBreakpoint: 800
       showSpines: true
       animateTransitions: true
-
-  # FOOTER
   - source: "@quartz-community/graph"
     enabled: true
     layout:
@@ -284,7 +265,6 @@ plugins:
       groupOptions:
         align: start
         shrink: false
-  # (seconde backlinks component to fix responsivness)
   - source: "@quartz-community/backlinks"
     enabled: true
     layout:
@@ -302,8 +282,6 @@ plugins:
     layout:
       position: footer
       priority: 50
-
-  # DISABLED
   - source: "@quartz-themes/core"
     enabled: false
     options:
@@ -320,7 +298,6 @@ plugins:
   - source: "@quartz-community/citations"
     enabled: false
     order: 85
-
 layout:
   groups:
     toolbar:
@@ -330,14 +307,12 @@ layout:
     footer:
       priority: 10
       gap: 1.5rem
-
   byPageType:
     "404":
       positions:
         beforeBody: []
         left: []
         right: []
-    content: {}
     folder:
       exclude:
         - reader-mode
