@@ -2,122 +2,65 @@
 @use "../variables.scss" as *;
 @use "../custom/icons.scss" as *;
 
-/* Default frame layout */
-#quartz-body:has(> .topbar) {
-  grid-template-areas:
-    "grid-navbar      grid-navbar      grid-navbar"
-    "grid-sidebar-left  grid-header    grid-sidebar-right"
-    "grid-sidebar-left  grid-center    grid-sidebar-right"
-    "grid-sidebar-left  grid-footer    grid-sidebar-right";
-  grid-template-rows: auto auto auto auto;
+/* Asema-specific navbar decorations (pixel icons).
+ * Core navbar bar/items/dialog styles live in the navbar plugin stylesheet. */
 
-  @media all and ($tablet) {
-    grid-template-areas:
-      "grid-navbar      grid-navbar"
-      "grid-sidebar-left  grid-header"
-      "grid-sidebar-left  grid-center"
-      "grid-sidebar-left  grid-sidebar-right"
-      "grid-sidebar-left  grid-footer";
+/* Page title inside the navbar bar */
+#quartz-body > .navbar > .page-title {
+  margin: 0;
+  & > a {
+    color: var(--darkgray);
+    font-weight: normal;
+    font-size: 2.2rem;
+    vertical-align: hanging;
   }
 
   @media all and ($mobile) {
-    grid-template-areas:
-      "grid-navbar"
-      "grid-sidebar-left"
-      "grid-header"
-      "grid-center"
-      "grid-sidebar-right"
-      "grid-footer";
+    display: none;
   }
 }
 
-/* Navbar styling */
-#quartz-body > .topbar {
-  grid-area: grid-navbar;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-
-  /* Full width to avoid body padding */
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1rem;
-  background-color: var(--light);
-  border-bottom: 1px solid var(--lightgray);
-  flex-wrap: wrap;
-  box-sizing: border-box;
-
-  & > * {
-    flex-shrink: 0;
-  }
-
-  & .flex-component:last-child {
-    /* last item from navbar is pushed to the right */
-    margin-left: auto;
-  }
-
-  /* Items style */
-  & .page-title {
-    margin: 0;
-    & > a {
-      color: var(--darkgray);
+/* Items icon */
+#quartz-body > .navbar nav.navbarItems,
+#quartz-body > .navbar dialog.navbar-dialog {
+  & ul li a {
+    &::before {
+      font-family: "pixelart-icons-font";
       font-weight: normal;
-      font-size: 2.2rem;
-      vertical-align: hanging;
+      font-size: $iconSize;
+      text-align: center;
+      vertical-align: central;
+      padding-right: 4px;
+    }
+    &[href^="/lieux"]::before {
+      content: $pixel-icon-pin;
+    }
+    &[href^="/lore"]::before {
+      content: $pixel-icon-book-open;
+    }
+  }
+
+  /* Mobile menu */
+  button {
+    &::before {
+      font-family: "pixelart-icons-font";
+      font-size: calc($iconSize * 1.2); /* optical correction */
+    }
+    &[command="show-modal"]::before {
+      content: $pixel-icon-menu;
+    }
+    &[command="close"]::before {
+      content: $pixel-icon-close;
     }
 
-    @media all and ($mobile) {
+    svg {
       display: none;
     }
   }
+}
 
-  /* Items icon */
-  nav.navbar,
-  dialog.navbar-dialog {
-    & ul li a {
-      &::before {
-        font-family: "pixelart-icons-font";
-        font-weight: normal;
-        font-size: $iconSize;
-        text-align: center;
-        vertical-align: central;
-        padding-right: 4px;
-      }
-      &[href^="/lieux"]::before {
-        content: $pixel-icon-pin;
-      }
-      &[href^="/lore"]::before {
-        content: $pixel-icon-book-open;
-      }
-    }
-
-    /* Mobile menu */
-    button {
-      &::before {
-        font-family: "pixelart-icons-font";
-        font-size: calc($iconSize * 1.2); /* optical correction */
-      }
-      &[command="show-modal"]::before {
-        content: $pixel-icon-menu;
-      }
-      &[command="close"]::before {
-        content: $pixel-icon-close;
-      }
-
-      svg {
-        display: none;
-      }
-    }
-  }
-
-  /* Icon optical correction */
-  dialog.navbar-dialog ul li a[href^="lieux"]::before {
-    margin-left: -3px;
-    font-size: calc($iconSize * 1.15);
-  }
+/* Icon optical correction */
+#quartz-body > .navbar dialog.navbar-dialog ul li a[href^="lieux"]::before {
+  margin-left: -3px;
+  font-size: calc($iconSize * 1.15);
 }

@@ -1,6 +1,6 @@
 @use "../variables.scss" as *;
 
-.page[data-frame="minimal"] > #quartz-body:has(> .topbar) {
+.page[data-frame="minimal"] > #quartz-body:has(> .navbar) {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
