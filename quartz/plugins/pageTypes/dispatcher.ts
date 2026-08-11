@@ -26,7 +26,6 @@ export function resolveLayout(
   const frame = overrides.frame ?? pageType.frame ?? "default"
   return {
     head: overrides.head ?? sharedDefaults.head!,
-    navbar: overrides.navbar ?? sharedDefaults.navbar ?? [],
     header: overrides.header ?? sharedDefaults.header ?? [],
     beforeBody: overrides.beforeBody ?? sharedDefaults.beforeBody ?? [],
     pageBody: pageType.body(undefined),
@@ -49,7 +48,6 @@ export function collectComponents(
     const layout = resolveLayout(pt, sharedDefaults, byPageType)
     const all = [
       layout.head,
-      ...layout.navbar,
       ...layout.header,
       ...layout.beforeBody,
       layout.pageBody,

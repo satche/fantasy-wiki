@@ -129,11 +129,7 @@ export async function handleCreate(argv) {
       await select({
         message: "Choose a template for your Quartz configuration",
         options: [
-          {
-            value: "default",
-            label: "Default",
-            hint: "clean Quartz setup with sensible defaults",
-          },
+          { value: "default", label: "Default", hint: "clean Quartz setup with sensible defaults" },
           {
             value: "obsidian",
             label: "Obsidian",
@@ -160,11 +156,7 @@ export async function handleCreate(argv) {
         message: `Choose how to initialize the content in \`${contentFolder}\``,
         options: [
           { value: "new", label: "Empty Quartz" },
-          {
-            value: "copy",
-            label: "Copy an existing folder",
-            hint: "overwrites `content`",
-          },
+          { value: "copy", label: "Copy an existing folder", hint: "overwrites `content`" },
           {
             value: "symlink",
             label: "Symlink an existing folder",

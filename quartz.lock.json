@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "plugins": {
+    "quartz-navbar": {
+      "source": "github:satche/quartz-navbar",
+      "resolved": "https://github.com/satche/quartz-navbar.git",
+      "commit": "592c6072af372cf5205b24e7c75de3b99e821509",
+      "installedAt": "2026-08-10T12:15:38.781Z"
+    }
+  }
+}

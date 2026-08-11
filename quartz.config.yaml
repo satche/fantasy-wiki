@@ -2,7 +2,7 @@
 configuration:
   pageTitle: Asema
   pageTitleSuffix: " — Asema"
-  enableSPA: true
+  enableSPA: false
   enablePopovers: true
   analytics: null
   locale: fr-FR
@@ -57,7 +57,7 @@ plugins:
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
-      position: navbar
+      position: header
       priority: 0
   - source: github:satche/quartz-navbar
     enabled: true
@@ -66,24 +66,31 @@ plugins:
         - label: Lore
           href: /lore
     layout:
-      position: navbar
+      position: header
       priority: 10
+  - source: "@quartz-community/spacer"
+    enabled: true
+    order: 25
+    layout:
+      position: header
+      priority: 15
+      display: all
   - source: "@quartz-community/search"
     enabled: true
     layout:
-      position: navbar
+      position: header
       priority: 20
       group: toolbar
   - source: "@quartz-community/darkmode"
     enabled: true
     layout:
-      position: navbar
+      position: header
       priority: 30
       group: toolbar
   - source: "@quartz-community/reader-mode"
     enabled: false
     layout:
-      position: navbar
+      position: header
       priority: 40
       group: toolbar
   - source: "@quartz-community/breadcrumbs"
@@ -313,6 +320,8 @@ layout:
         beforeBody: []
         left: []
         right: []
+    content:
+      template: navbar
     folder:
       exclude:
         - reader-mode

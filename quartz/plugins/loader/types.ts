@@ -8,7 +8,7 @@ import { BuildCtx } from "../../util/ctx"
 
 export type PluginCategory = "transformer" | "filter" | "emitter" | "pageType" | "component"
 
-export type LayoutPosition = "navbar" | "left" | "right" | "beforeBody" | "afterBody" | "header" | "footer"
+export type LayoutPosition = "left" | "right" | "beforeBody" | "afterBody" | "header" | "footer"
 
 export type LayoutDisplay = "all" | "mobile-only" | "desktop-only"
 
@@ -174,7 +174,7 @@ export interface FlexGroupConfig {
 export interface PageTypeLayoutOverride {
   exclude?: string[]
   positions?: Partial<Record<LayoutPosition, PluginLayoutDeclaration[]>>
-  /** Override the page frame template (e.g. "default", "full-width", "minimal", "navbar") */
+  /** Override the page frame template (e.g. "default", "full-width", "minimal") */
   template?: string
 }
 

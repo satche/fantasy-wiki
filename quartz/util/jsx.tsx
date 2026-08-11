@@ -18,15 +18,9 @@ const customComponents: Components = {
     </div>
   ),
   style: ({ children, ...rest }) =>
-    h("style", {
-      ...rest,
-      dangerouslySetInnerHTML: { __html: childrenToString(children) },
-    }),
+    h("style", { ...rest, dangerouslySetInnerHTML: { __html: childrenToString(children) } }),
   script: ({ children, ...rest }) =>
-    h("script", {
-      ...rest,
-      dangerouslySetInnerHTML: { __html: childrenToString(children) },
-    }),
+    h("script", { ...rest, dangerouslySetInnerHTML: { __html: childrenToString(children) } }),
 }
 
 export function htmlToJsx(fp: FilePath, tree: Node) {

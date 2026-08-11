@@ -1,4 +1,4 @@
-import { PageFrame, PageFrameProps } from "./types";
+import { PageFrame, PageFrameProps } from "./types"
 
 /**
  * Minimal page frame — no sidebars, no header/footer chrome. Only the
@@ -10,14 +10,9 @@ import { PageFrame, PageFrameProps } from "./types";
  */
 export const MinimalFrame: PageFrame = {
   name: "minimal",
-  render({ componentData, navbar, pageBody: Content, footer }: PageFrameProps) {
+  render({ componentData, pageBody: Content, footer }: PageFrameProps) {
     return (
       <>
-        <div class="topbar">
-          {navbar.map((NavComponent) => (
-            <NavComponent {...componentData} />
-          ))}
-        </div>
         <div class="center minimal">
           <Content {...componentData} />
         </div>
@@ -25,6 +20,6 @@ export const MinimalFrame: PageFrame = {
           <FooterComponent {...componentData} />
         ))}
       </>
-    );
+    )
   },
-};
+}

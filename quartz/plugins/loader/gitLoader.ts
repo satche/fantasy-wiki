@@ -529,9 +529,7 @@ export async function installPlugin(
     }
 
     const branchArg = spec.ref ? ` --branch ${spec.ref}` : ""
-    execSync(`git clone --depth 1${branchArg} "${spec.repo}" "${tmpDir}"`, {
-      stdio: "pipe",
-    })
+    execSync(`git clone --depth 1${branchArg} "${spec.repo}" "${tmpDir}"`, { stdio: "pipe" })
 
     const subdirPath = path.join(tmpDir, spec.subdir)
     if (!fs.existsSync(subdirPath)) {
@@ -543,9 +541,7 @@ export async function installPlugin(
     fs.rmSync(tmpDir, { recursive: true })
   } else {
     const branchArg = spec.ref ? ` --branch ${spec.ref}` : ""
-    execSync(`git clone --depth 1${branchArg} "${spec.repo}" "${pluginDir}"`, {
-      stdio: "pipe",
-    })
+    execSync(`git clone --depth 1${branchArg} "${spec.repo}" "${pluginDir}"`, { stdio: "pipe" })
   }
 
   buildInstalledPlugin(pluginDir, spec.name, options.verbose)

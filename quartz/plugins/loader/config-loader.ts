@@ -675,7 +675,7 @@ export async function loadQuartzLayout(layoutOverrides?: {
           if (Array.isArray(components) && components.length === 0) {
             const key = pos as keyof Pick<
               FullPageLayout,
-              "navbar" | "header" | "left" | "right" | "beforeBody" | "afterBody" | "footer"
+              "header" | "left" | "right" | "beforeBody" | "afterBody" | "footer"
             >
             if (key in ptLayout) {
               ;(ptLayout as Record<string, unknown>)[key] = []
@@ -698,7 +698,6 @@ export async function loadQuartzLayout(layoutOverrides?: {
 
   // Apply structural defaults
   defaultLayout.head = head
-  defaultLayout.navbar = defaultLayout.navbar ?? []
   defaultLayout.header = defaultLayout.header ?? []
   defaultLayout.footer = defaultLayout.footer ?? []
 
@@ -706,7 +705,6 @@ export async function loadQuartzLayout(layoutOverrides?: {
   for (const pageType of Object.keys(byPageType)) {
     const pt = byPageType[pageType]
     if (!pt.head) pt.head = head
-    if (!pt.navbar) pt.navbar = defaultLayout.navbar
     if (!pt.header) pt.header = defaultLayout.header
     if (!pt.footer) pt.footer = defaultLayout.footer
   }
@@ -736,7 +734,6 @@ export function buildLayoutForEntries(
       groupOptions?: PluginLayoutDeclaration["groupOptions"]
     }[]
   > = {
-    navbar: [],
     header: [],
     left: [],
     right: [],
@@ -862,7 +859,7 @@ export function buildLayoutForEntries(
     const resolved = resolveGroups(items, layoutConfig.groups ?? {})
     const key = position as keyof Pick<
       FullPageLayout,
-      "navbar" | "header" | "left" | "right" | "beforeBody" | "afterBody" | "footer"
+      "header" | "left" | "right" | "beforeBody" | "afterBody" | "footer"
     >
     ;(result as Record<string, QuartzComponent[]>)[key] = resolved
   }

@@ -10,8 +10,6 @@ export interface PageFrameProps {
   componentData: QuartzComponentProps
   /** The Head component (rendered in <head>) — NOT used by frames, included for completeness */
   head: QuartzComponent
-  /** Navbar slot components (rendered in a top navbar) */
-  navbar: QuartzComponent[]
   /** Header slot components (rendered inside <header>) */
   header: QuartzComponent[]
   /** Components rendered before the page body */

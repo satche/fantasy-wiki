@@ -19,7 +19,6 @@ import type { BuildCtx } from "../util/ctx"
 
 interface RenderComponents {
   head: QuartzComponent
-  navbar: QuartzComponent[]
   header: QuartzComponent[]
   beforeBody: QuartzComponent[]
   pageBody: QuartzComponent
@@ -324,7 +323,6 @@ export function renderPage(
 
   const {
     head: Head,
-    navbar,
     header,
     beforeBody,
     pageBody: Content,
@@ -356,7 +354,6 @@ export function renderPage(
               frame.render({
                 componentData,
                 head: Head,
-                navbar,
                 header,
                 beforeBody,
                 pageBody: Content,

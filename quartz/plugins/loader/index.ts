@@ -129,10 +129,7 @@ function isGitSource(source: string): boolean {
 async function resolveSinglePlugin(
   specifier: PluginSpecifier,
   options: PluginResolutionOptions,
-): Promise<{
-  plugin: LoadedPlugin | null
-  error: PluginResolutionError | null
-}> {
+): Promise<{ plugin: LoadedPlugin | null; error: PluginResolutionError | null }> {
   let packageName: string
   let manifest: Partial<PluginManifest> = {}
   let pluginSource = "npm"
@@ -188,9 +185,7 @@ async function resolveSinglePlugin(
       const module = await import(toFileUrl(entryPoint))
       const importedManifest: PluginManifest | null = module.manifest ?? null
 
-      validatePluginExternals(gitSpec.name, entryPoint, {
-        verbose: options.verbose,
-      })
+      validatePluginExternals(gitSpec.name, entryPoint, { verbose: options.verbose })
 
       manifest = importedManifest ?? {}
 

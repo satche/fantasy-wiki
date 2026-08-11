@@ -257,27 +257,15 @@ describe("FileTrie", () => {
         ["index" as FullSlug, { title: "Root", slug: "index", filePath: "index.md" }],
         [
           "folder/file1" as FullSlug,
-          {
-            title: "File 1",
-            slug: "folder/file1",
-            filePath: "folder/file1.md",
-          },
+          { title: "File 1", slug: "folder/file1", filePath: "folder/file1.md" },
         ],
         [
           "folder/index" as FullSlug,
-          {
-            title: "Folder Index",
-            slug: "folder/index",
-            filePath: "folder/index.md",
-          },
+          { title: "Folder Index", slug: "folder/index", filePath: "folder/index.md" },
         ],
         [
           "folder/file2" as FullSlug,
-          {
-            title: "File 2",
-            slug: "folder/file2",
-            filePath: "folder/file2.md",
-          },
+          { title: "File 2", slug: "folder/file2", filePath: "folder/file2.md" },
         ],
         [
           "folder/folder2/index" as FullSlug,

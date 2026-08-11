@@ -175,12 +175,7 @@ export function parseGitSource(source) {
     const [repoPath, ref] = url.replace("github:", "").split("#")
     const [owner, repo] = repoPath.split("/")
     const name = typeof source === "object" && source.name ? source.name : repo
-    return {
-      name,
-      url: `https://github.com/${owner}/${repo}.git`,
-      ref,
-      subdir,
-    }
+    return { name, url: `https://github.com/${owner}/${repo}.git`, ref, subdir }
   }
   if (url.startsWith("git+")) {
     const raw = url.replace("git+", "")
@@ -205,10 +200,7 @@ export function parseGitSource(source) {
 
 export function getGitCommit(pluginDir) {
   try {
-    return execSync("git rev-parse HEAD", {
-      cwd: pluginDir,
-      encoding: "utf-8",
-    }).trim()
+    return execSync("git rev-parse HEAD", { cwd: pluginDir, encoding: "utf-8" }).trim()
   } catch {
     return "unknown"
   }

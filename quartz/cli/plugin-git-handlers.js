@@ -648,12 +648,7 @@ export async function handlePluginInstallUnified({
             if (subdir) {
               console.log(styleText("cyan", `→ Cloning ${name} from ${url} (subdir: ${subdir})...`))
               fs.mkdirSync(path.dirname(pluginDir), { recursive: true })
-              const commit = await cloneWithSubdirAsync({
-                url,
-                ref,
-                subdir,
-                pluginDir,
-              })
+              const commit = await cloneWithSubdirAsync({ url, ref, subdir, pluginDir })
               lockfile.plugins[name] = {
                 source: entry.source,
                 resolved: url,
@@ -673,9 +668,7 @@ export async function handlePluginInstallUnified({
               const branchArg = ref ? ` --branch ${ref}` : ""
               await execAsync(`git clone --depth 1${branchArg} "${url}" "${pluginDir}"`)
 
-              const { stdout } = await execAsync("git rev-parse HEAD", {
-                cwd: pluginDir,
-              })
+              const { stdout } = await execAsync("git rev-parse HEAD", { cwd: pluginDir })
               const commit = stdout.trim()
               lockfile.plugins[name] = {
                 source: entry.source,
@@ -855,9 +848,7 @@ export async function handlePluginInstallUnified({
             )
             const branchArg = entry.ref ? ` --branch ${entry.ref}` : ""
             await execAsync(`git clone --depth 1${branchArg} "${entry.resolved}" "${pluginDir}"`)
-            await execAsync(`git checkout ${entry.commit}`, {
-              cwd: pluginDir,
-            })
+            await execAsync(`git checkout ${entry.commit}`, { cwd: pluginDir })
           }
           console.log(styleText("green", `✓ ${name} restored`))
           restoredPlugins.push({ name, pluginDir })
@@ -969,13 +960,9 @@ export async function handlePluginInstallUnified({
             await execAsync(`git fetch --depth 1 origin${fetchRef ? " " + fetchRef : ""}`, {
               cwd: pluginDir,
             })
-            await execAsync(`git reset --hard ${resetTarget}`, {
-              cwd: pluginDir,
-            })
+            await execAsync(`git reset --hard ${resetTarget}`, { cwd: pluginDir })
 
-            const { stdout } = await execAsync("git rev-parse HEAD", {
-              cwd: pluginDir,
-            })
+            const { stdout } = await execAsync("git rev-parse HEAD", { cwd: pluginDir })
             const newCommit = stdout.trim()
             if (newCommit !== entry.commit) {
               entry.commit = newCommit
@@ -1105,12 +1092,8 @@ export async function handlePluginInstallUnified({
         if (action === "update") {
           console.log(styleText("cyan", `  → ${name}: updating to ${entry.commit.slice(0, 7)}...`))
           const fetchRef = entry.ref ? ` ${entry.ref}` : ""
-          await execAsync(`git fetch --depth 1 origin${fetchRef}`, {
-            cwd: pluginDir,
-          })
-          await execAsync(`git reset --hard ${entry.commit}`, {
-            cwd: pluginDir,
-          })
+          await execAsync(`git fetch --depth 1 origin${fetchRef}`, { cwd: pluginDir })
+          await execAsync(`git reset --hard ${entry.commit}`, { cwd: pluginDir })
           pluginsToBuild.push({ name, pluginDir })
           installed++
         } else {
@@ -1128,12 +1111,8 @@ export async function handlePluginInstallUnified({
             const branchArg = entry.ref ? ` --branch ${entry.ref}` : ""
             await execAsync(`git clone --depth 1${branchArg} "${entry.resolved}" "${pluginDir}"`)
             if (entry.commit !== "unknown") {
-              await execAsync(`git fetch --depth 1 origin ${entry.commit}`, {
-                cwd: pluginDir,
-              })
-              await execAsync(`git checkout ${entry.commit}`, {
-                cwd: pluginDir,
-              })
+              await execAsync(`git fetch --depth 1 origin ${entry.commit}`, { cwd: pluginDir })
+              await execAsync(`git checkout ${entry.commit}`, { cwd: pluginDir })
             }
           }
           console.log(styleText("green", `  ✓ ${name}@${entry.commit.slice(0, 7)}`))
@@ -1259,15 +1238,7 @@ export async function handlePluginAdd(
         addedPlugins.push({ name, pluginDir, source, configSource })
         console.log(styleText("green", `✓ Added ${name} (local symlink)`))
       } else {
-        remoteSources.push({
-          source,
-          name,
-          url,
-          ref,
-          subdir,
-          pluginDir,
-          configSource,
-        })
+        remoteSources.push({ source, name, url, ref, subdir, pluginDir, configSource })
       }
     } catch (error) {
       console.log(styleText("red", `✗ Failed to add ${formatSource(source)}: ${error}`))
@@ -1285,12 +1256,7 @@ export async function handlePluginAdd(
           if (subdir) {
             console.log(styleText("cyan", `→ Adding ${name} from ${url} (subdir: ${subdir})...`))
             fs.mkdirSync(path.dirname(pluginDir), { recursive: true })
-            const commit = await cloneWithSubdirAsync({
-              url,
-              ref,
-              subdir,
-              pluginDir,
-            })
+            const commit = await cloneWithSubdirAsync({ url, ref, subdir, pluginDir })
             lockfile.plugins[name] = {
               source,
               resolved: url,
@@ -1309,9 +1275,7 @@ export async function handlePluginAdd(
             const branchArg = ref ? ` --branch ${ref}` : ""
             await execAsync(`git clone --depth 1${branchArg} "${url}" "${pluginDir}"`)
 
-            const { stdout } = await execAsync("git rev-parse HEAD", {
-              cwd: pluginDir,
-            })
+            const { stdout } = await execAsync("git rev-parse HEAD", { cwd: pluginDir })
             const commit = stdout.trim()
             lockfile.plugins[name] = {
               source,
@@ -1618,15 +1582,7 @@ export async function handlePluginStatus() {
     const sourceLabel = formatSource(entry.source)
     const commitLabel = entry.commit === "local" ? "local" : `@${entry.commit.slice(0, 7)}`
     const enabled = enabledByName.get(name) ?? false
-    return {
-      name,
-      entry,
-      exists,
-      displayName,
-      sourceLabel,
-      commitLabel,
-      enabled,
-    }
+    return { name, entry, exists, displayName, sourceLabel, commitLabel, enabled }
   })
 
   const nameWidth = Math.max(8, ...rows.map((row) => row.displayName.length)) + 2
@@ -1660,20 +1616,11 @@ export async function handlePluginStatus() {
       case "local":
         return { text: "— local", label: styleText("gray", "— local") }
       case "up_to_date":
-        return {
-          text: "✓ up to date",
-          label: styleText("green", "✓ up to date"),
-        }
+        return { text: "✓ up to date", label: styleText("green", "✓ up to date") }
       case "update_available":
-        return {
-          text: "↑ update available",
-          label: styleText("yellow", "↑ update available"),
-        }
+        return { text: "↑ update available", label: styleText("yellow", "↑ update available") }
       case "failed":
-        return {
-          text: "✗ check failed",
-          label: styleText("red", "✗ check failed"),
-        }
+        return { text: "✗ check failed", label: styleText("red", "✗ check failed") }
       default:
         return { text: "⋯", label: styleText("cyan", "⋯") }
     }
