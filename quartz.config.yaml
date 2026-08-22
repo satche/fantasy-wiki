@@ -57,6 +57,7 @@ plugins:
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
+      display: desktop-only
       position: header
       priority: 0
   - source: github:satche/quartz-navbar
@@ -320,8 +321,6 @@ layout:
         beforeBody: []
         left: []
         right: []
-    content:
-      template: navbar
     folder:
       exclude:
         - reader-mode

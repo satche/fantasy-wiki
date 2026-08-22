@@ -6,17 +6,14 @@
  * Core navbar bar/items/dialog styles live in the navbar plugin stylesheet. */
 
 /* Page title inside the navbar bar */
-#quartz-body > .navbar > .page-title {
+#quartz-body header h2.page-title {
   margin: 0;
-  & > a {
-    color: var(--darkgray);
-    font-weight: normal;
-    font-size: 2.2rem;
-    vertical-align: hanging;
-  }
+  margin-top: -0.2rem; /* font optical correction */
+  font-weight: normal;
+  font-size: 2.5rem;
 
-  @media all and ($mobile) {
-    display: none;
+  & > a {
+      color: var(--darkgray);
   }
 }
 
