@@ -2,7 +2,7 @@
   "name": "fantasy-wiki",
   "description": "A static wiki generator for worldbuilding, based on Quartz",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "author": "Satche",
   "license": "MIT",
@@ -26,11 +26,13 @@
     "node": ">=22"
   },
   "keywords": [
-    "site generator",
-    "ssg",
+    "wiki",
+    "worldbuilding",
+    "ttrpg",
     "markdown",
     "quartz",
-    "wiki"
+    "obsidian",
+    ""
   ],
   "bin": {
     "quartz": "./quartz/bootstrap-cli.mjs"
