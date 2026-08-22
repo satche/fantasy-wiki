@@ -4,6 +4,7 @@ configuration:
   pageTitleSuffix: " — Fantasy Wiki"
   enableSPA: false
   enablePopovers: true
+  baseUrl: satche.github.com/fantasy-wiki
   analytics: null
   locale: en-US
   ignorePatterns:
