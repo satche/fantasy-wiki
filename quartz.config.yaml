@@ -1,12 +1,11 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Asema
-  pageTitleSuffix: " — Asema"
+  pageTitle: Fantasy Wiki
+  pageTitleSuffix: " — Fantasy Wiki"
   enableSPA: false
   enablePopovers: true
   analytics: null
-  locale: fr-FR
-  baseUrl: asema.thomas-robert.com
+  locale: en-US
   ignorePatterns:
     - private
     - templates
@@ -64,8 +63,14 @@ plugins:
     enabled: true
     options:
       links:
-        - label: Lore
-          href: /lore
+        - label: Sessions
+          href: /sessions
+        - label: NPCs
+          href: /npcs
+        - label: Places
+          href: /places
+        - label: Players
+          href: /players
     layout:
       position: header
       priority: 10
