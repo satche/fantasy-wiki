@@ -65,13 +65,13 @@ plugins:
     options:
       links:
         - label: Sessions
-          href: /sessions
+          href: /fantasy-wiki/sessions
         - label: NPCs
-          href: /npcs
+          href: /fantasy-wiki/npcs
         - label: Places
-          href: /places
+          href: /fantasy-wiki/places
         - label: Players
-          href: /players
+          href: /fantasy-wiki/players
     layout:
       position: header
       priority: 10
