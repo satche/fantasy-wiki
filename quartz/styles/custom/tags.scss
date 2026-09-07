@@ -1,0 +1,22 @@
+.tags {
+  --tagSpacing: 0.2rem;
+  margin: 0 calc(var(--tagSpacing) * -1);
+
+  & a.tag-link {
+    margin: 0;
+    padding: var(--tagSpacing) var(--tagSpacing);
+    background-color: transparent;
+    border: none;
+    color: var(--lightgray);
+    font-weight: 400;
+
+    &::before {
+      opacity: 0.6;
+    }
+
+    &:hover {
+      border-color: var(--gray);
+      color: var(--gray);
+    }
+  }
+}
