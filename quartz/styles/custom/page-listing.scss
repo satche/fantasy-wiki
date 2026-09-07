@@ -1,3 +1,68 @@
-.page-listing {
+@use "../variables.scss" as *;
 
+// Show page-listing only on tag pages,
+.page-listing {
+  display: none;
+}
+
+body[data-slug^="tags/"] .page-listing {
+  display: initial;
+}
+
+
+
+.page-listing {
+  & p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ul.section-ul {
+    list-style: none;
+    margin-top: 0rem;
+    padding-left: 0;
+  }
+
+  li.section-li {
+    margin-bottom: 0.5rem;
+
+    > .section {
+      display: flex;
+
+      &::before {
+        content: "𜰞";
+        color: var(--lightgray);
+        margin-right: 6px;
+        font-size: 1.1rem;
+        display: inline-block;
+        transform: translateY(-10px);
+      }
+
+      // Hide date
+      .meta {
+        display: none;
+      }
+
+      .desc > h3 {
+        font-family: var(--bodyFont);
+        font-size: 1.15rem;
+        font-weight: $semiBoldWeight;
+        margin: 0;
+      }
+
+      > .tags {
+        margin-left: auto;
+      }
+    }
+  }
+
+  // Mobile: column = title, then tags
+  @media all and ($mobile) {
+    li.section-li > .section {
+      flex-direction: colum;
+      & > .tags {
+        display: none;
+      }
+    }
+  }
 }
