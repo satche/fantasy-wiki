@@ -5,11 +5,12 @@
   display: none;
 }
 
-body[data-slug^="tags/"] .page-listing {
-  display: initial;
+body[data-slug^="tags/"],
+body:has(.markdown-rendered) {
+  & .page-listing {
+    display: initial;
+  }
 }
-
-
 
 .page-listing {
   & p {
