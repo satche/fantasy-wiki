@@ -52,8 +52,8 @@ plugins:
       fontOrigin: local
       title: '"cobblestone", serif'
       header: '"cobblestone", serif'
-      body: '"atikson", sans-serif'
-      code: '"hack", monospace'
+      body: '"plex", sans-serif'
+      code: '"commit", monospace'
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
@@ -144,6 +144,9 @@ plugins:
       showSubfolders: false
   - source: "@quartz-community/tag-page"
     enabled: true
+    layout:
+      position: beforeBody
+      priority: 50
   - source: "@quartz-community/obsidian-flavored-markdown"
     enabled: true
     options:
@@ -188,17 +191,19 @@ plugins:
       position: beforeBody
       priority: 100
   - source: "@quartz-community/content-meta"
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
-      priority: 100
+      priority: 80
+      #group: metadata
     options:
       showReadingTime: false
   - source: "@quartz-community/tag-list"
     enabled: true
     layout:
       position: beforeBody
-      priority: 30
+      priority: 100
+      # group: metadata
   - source: "@quartz-community/comments"
     enabled: false
     options:
@@ -209,14 +214,6 @@ plugins:
       priority: 10
   - source: "@quartz-community/recent-notes"
     enabled: false
-  - source: "@quartz-community/spacer"
-    enabled: false
-    options: {}
-    order: 25
-    layout:
-      position: left
-      priority: 25
-      display: mobile-only
   - source: "@quartz-community/bases-page"
     enabled: true
     options: {}
@@ -314,6 +311,10 @@ plugins:
     order: 85
 layout:
   groups:
+    metadata:
+      priority: 99
+      direction: row
+      gap: 0.5rem
     toolbar:
       priority: 99
       direction: row
