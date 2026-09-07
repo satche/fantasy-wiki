@@ -15,6 +15,7 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
+      # Ignore this, check the quartz-fonts plugin
       header: Jacquard 12
       body: Atkinson Hyperlegible
       code: Atkinson Hyperlegible Mono
