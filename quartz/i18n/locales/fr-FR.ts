@@ -76,12 +76,12 @@ export default {
         count === 1 ? "1 élément sous ce dossier." : `${count} éléments sous ce dossier.`,
     },
     tagContent: {
-      tag: "Étiquette",
-      tagIndex: "Index des étiquettes",
+      tag: "Tag",
+      tagIndex: "Index des tags",
       itemsUnderTag: ({ count }) =>
-        count === 1 ? "1 élément avec cette étiquette." : `${count} éléments avec cette étiquette.`,
-      showingFirst: ({ count }) => `Affichage des premières ${count} étiquettes.`,
-      totalTags: ({ count }) => `Trouvé ${count} étiquettes au total.`,
+        count === 1 ? "1 élément avec ce tag." : `${count} éléments avec ce tag.`,
+        showingFirst: ({ count }) => `Affichage des premières ${count} tags.`,
+        totalTags: ({ count }) => `Trouvé ${count} tags au total.`,
     },
   },
 } as const satisfies Translation
