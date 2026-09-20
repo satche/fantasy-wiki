@@ -5,8 +5,7 @@
   display: none;
 }
 
-body[data-slug^="tags/"],
-body:has(.markdown-rendered) {
+body[data-slug^="tags/"] {
   & .page-listing {
     display: initial;
   }

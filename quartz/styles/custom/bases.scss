@@ -1,0 +1,47 @@
+// GENERAL
+.bases-page {
+  // Card view
+  .bases-card-image {
+    img {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  // Table view
+  table.bases-table {
+    border: none;
+    td,
+    th {
+      min-width: auto;
+    }
+  }
+}
+
+// SESSIONS
+// Put the session number next to the title (top-right of the card)
+body[data-slug^="sessions/"] .bases-page {
+  .bases-card-body {
+    position: relative;
+  }
+  .bases-card-title {
+    padding-right: 20px;
+  }
+  .bases-card-meta {
+    .bases-card-label {
+      display: none;
+    }
+    .bases-card-row {
+      font-weight: normal;
+      &:first-child {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        color: var(--gray);
+        &::before {
+          content: "#";
+        }
+      }
+    }
+  }
+}
