@@ -26,7 +26,18 @@
   }
 
   a.transclude-src {
-      display: none;
+    display: none;
+  }
+
+  time {
+    color: var(--gray);
+    &::before {
+      content: "\ea60"; // pixel icon calendar
+      font-family: "pixelart-icons-font";
+      font-size: 1.2rem;
+      padding-right: 4px;
+      vertical-align: hanging;
+    }
   }
 
   img {

@@ -44,9 +44,12 @@
     cursor: default;
   }
 
-  /* Fix to avoid page breadcrumb getting fetch in popover */
-  & > .popover-inner > .popover-hint .breadcrumb-container {
-    display: none;
+  /* Custom fixes */
+  & > .popover-inner > .popover-hint {
+    .breadcrumb-container,
+    .metadata-container {
+      display: none;
+    }
   }
 
   & > .popover-inner[data-content-type] {

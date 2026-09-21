@@ -1,8 +1,19 @@
 // GENERAL
 .bases-page {
   // Card view
+  .bases-cards {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 200px)) !important;
+  }
+  a.bases-card:hover {
+    box-shadow: none;
+    .bases-card-image img {
+      transform: scale(1.05);
+    }
+  }
   .bases-card-image {
     img {
+      transition: transform 0.2s ease-out;
+      transform: scale(1);
       width: 100%;
       margin: 0;
     }
