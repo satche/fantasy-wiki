@@ -25,6 +25,10 @@
     }
   }
 
+  a.transclude-src {
+      display: none;
+  }
+
   img {
     width: attr(alt px);
   }

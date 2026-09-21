@@ -7,6 +7,9 @@
       margin: 0;
     }
   }
+  .bases-card-meta {
+    font-weight: normal;
+  }
 
   // Table view
   table.bases-table {
@@ -31,16 +34,28 @@ body[data-slug^="sessions/"] .bases-page {
     .bases-card-label {
       display: none;
     }
-    .bases-card-row {
-      font-weight: normal;
-      &:first-child {
-        position: absolute;
-        top: 12px;
-        right: 12px;
-        color: var(--gray);
-        &::before {
-          content: "#";
-        }
+    .bases-card-row:first-child {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      color: var(--gray);
+      &::before {
+        content: "#";
+      }
+    }
+  }
+}
+
+// NPCs / Lieux
+body[data-slug^="npcs/"],
+body[data-slug^="lieux/"] {
+  .bases-page {
+    .bases-card-meta {
+      .bases-card-label {
+        display: none;
+      }
+      .bases-card-row:first-child {
+        display: none;
       }
     }
   }

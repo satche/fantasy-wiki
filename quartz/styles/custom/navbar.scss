@@ -18,8 +18,8 @@
 }
 
 /* Items icon */
-#quartz-body > .navbar nav.navbarItems,
-#quartz-body > .navbar dialog.navbar-dialog {
+nav.navbarItems,
+dialog.navbar-dialog {
   & ul li a {
     &::before {
       font-family: "pixelart-icons-font";
@@ -29,11 +29,20 @@
       vertical-align: central;
       padding-right: 4px;
     }
+    &[href^="/sessions"]::before {
+      content: $pixel-icon-book;
+    }
+    &[href^="/npcs"]::before {
+      content: $pixel-icon-users;
+    }
     &[href^="/lieux"]::before {
       content: $pixel-icon-pin;
     }
     &[href^="/lore"]::before {
       content: $pixel-icon-book-open;
+    }
+    &[href^="/joueurs"]::before {
+      content: $pixel-icon-contact;
     }
   }
 
@@ -57,7 +66,7 @@
 }
 
 /* Icon optical correction */
-#quartz-body > .navbar dialog.navbar-dialog ul li a[href^="lieux"]::before {
+dialog.navbar-dialog ul li a[href^="lieux"]::before {
   margin-left: -3px;
   font-size: calc($iconSize * 1.15);
 }
