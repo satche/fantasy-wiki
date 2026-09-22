@@ -4,16 +4,22 @@
   .bases-cards {
     grid-template-columns: repeat(auto-fit, minmax(120px, 200px)) !important;
   }
-  a.bases-card:hover {
-    box-shadow: none;
-    .bases-card-image img {
-      transform: scale(1.05);
+  a.bases-card {
+    .bases-card-body {
+      margin-top: auto;
+    }
+
+    transform: translateY(0px);
+    transition: all 0.25s ease;
+    box-shadow: 0px 0px var(--gray);
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 5px var(--gray);
     }
   }
   .bases-card-image {
     img {
-      transition: transform 0.2s ease-out;
-      transform: scale(1);
       width: 100%;
       margin: 0;
     }
@@ -33,8 +39,12 @@
 }
 
 // SESSIONS
+// Extend width of cards
 // Put the session number next to the title (top-right of the card)
 body[data-slug^="sessions/"] .bases-page {
+  .bases-cards {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
+  }
   .bases-card-body {
     position: relative;
   }
