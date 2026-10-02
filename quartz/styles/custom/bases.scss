@@ -5,10 +5,6 @@
     grid-template-columns: repeat(auto-fit, minmax(120px, 200px)) !important;
   }
   a.bases-card {
-    .bases-card-body {
-      margin-top: auto;
-    }
-
     transform: translateY(0px);
     transition: all 0.25s ease;
     box-shadow: 0px 0px var(--gray);
