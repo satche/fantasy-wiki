@@ -34,13 +34,17 @@
   }
 }
 
-// SESSIONS
 // Extend width of cards
 // Put the session number next to the title (top-right of the card)
-body[data-slug^="sessions/"] .bases-page {
-  .bases-cards {
+body[data-slug^="sessions/"],
+body[data-slug^="lore/histoire"] {
+  .bases-page .bases-cards {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
   }
+}
+
+// SESSIONS
+body[data-slug^="sessions/"] .bases-page {
   .bases-card-body {
     position: relative;
   }
