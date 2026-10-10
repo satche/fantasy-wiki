@@ -14,7 +14,10 @@ quartz/cli/tui/dist/
 .turbo/
 docs
 
+# Sveltia CMS
+.sveltia*
+admin
+
 # Content files to ignore
-statblock
-_template
-template
+statblock.*
+_template.*
