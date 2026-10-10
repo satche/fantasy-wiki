@@ -17,7 +17,7 @@ Cinq aventuriers se sont rencontrés à [Descapras](./lieux/verteris/altera/desc
 
 ## Changelog
 
-<time datime="2026-10-X"><b>X octobre 2026</b></time> <small>(Dernière mise-à-jour)</small>
+<time datime="2026-10-10"><b>10 octobre 2026</b></time> <small>(Dernière mise-à-jour)</small>
 
+- Ouverture du [paneau d'administration](./admin/)
 - Ouverture d'un chapitre "Quête" pour les joueurs
-- Plans élémentaires: réécriture de la section [Expéditions](./lore/plans/plans-elementaires.md#Expéditions), rendue publique
