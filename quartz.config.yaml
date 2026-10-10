@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Fantasy Wiki
-  pageTitleSuffix: " — Fantasy Wiki"
+  pageTitle: Asema
+  pageTitleSuffix: " — Asema"
   enableSPA: false
   enablePopovers: true
-  baseUrl: satche.github.com/fantasy-wiki
+  baseUrl: asema.thomas-robert.com
   analytics: null
-  locale: en-US
+  locale: fr-FR
   ignorePatterns:
     - private
     - templates
@@ -15,7 +15,6 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      # Ignore this, check the quartz-fonts plugin
       header: Jacquard 12
       body: Atkinson Hyperlegible
       code: Atkinson Hyperlegible Mono
@@ -43,7 +42,7 @@ configuration:
 plugins:
   - source: "@quartz-community/description"
     enabled: true
-  - source: "@quartz-community/crawl-links"
+  - source: github:quartz-community/crawl-links
     enabled: true
     options:
       markdownLinkResolution: relative
@@ -66,13 +65,15 @@ plugins:
     options:
       links:
         - label: Sessions
-          href: /fantasy-wiki/sessions
+          href: /sessions
         - label: NPCs
-          href: /fantasy-wiki/npcs
-        - label: Places
-          href: /fantasy-wiki/places
-        - label: Players
-          href: /fantasy-wiki/players
+          href: /npcs
+        - label: Lieux
+          href: /lieux
+        - label: Lore
+          href: /lore
+        - label: Joueurs
+          href: /joueurs
     layout:
       position: header
       priority: 10
@@ -196,7 +197,6 @@ plugins:
     layout:
       position: beforeBody
       priority: 80
-      #group: metadata
     options:
       showReadingTime: false
   - source: "@quartz-community/tag-list"
@@ -204,7 +204,6 @@ plugins:
     layout:
       position: beforeBody
       priority: 100
-      # group: metadata
   - source: "@quartz-community/comments"
     enabled: false
     options:
@@ -274,15 +273,6 @@ plugins:
       position: afterBody
       priority: 30
       display: desktop-only
-      groupOptions:
-        align: start
-        shrink: false
-  - source: "@quartz-community/backlinks"
-    enabled: true
-    layout:
-      position: afterBody
-      priority: 30
-      display: mobile-only
       groupOptions:
         align: start
         shrink: false
