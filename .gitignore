@@ -13,3 +13,8 @@ replit.nix
 quartz/cli/tui/dist/
 .turbo/
 docs
+
+# Content files to ignore
+statblock
+_template
+template
