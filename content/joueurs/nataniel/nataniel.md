@@ -4,21 +4,19 @@ character-sheet: https://pathbuilder2e.com/launch.html?build=1561101
 classe: Investigateur, Science Alchimistes
 image: "[[./nataniel.png]]"
 joueur: Benjamin
-tags:
-  - humain
-  - iliari
-  - joueur
-  - personnage
-  - verteris
+tags: [humain, iliari, joueur, personnage, verteris]
 ---
 
 # Nataniel
 
 Nataniel Clerive est un jeune iliari issu de la [Vallée du Sel](../../lieux/verteris/carcelie/vallee-du-sel/vallee-du-sel.md), province située au sud de [Verteris](../../lore/geographie/verteris.md), dams le royaume de [Carcelie](../../lieux/verteris/carcelie/carcelie.md).
 
-Nataniel parcourt le monde pour mieux comprendre les écritures runiques qu'il a découvertes dans les profondeurs de l'[Iris du Monde](../../lieux/verteris/carcelie/vallee-du-sel/vallee-du-sel.md), ainsi que les mystères qui entourent son peuple.
 
 ![343](./nataniel.png)
+
+## Quête
+
+Nataniel parcourt le monde pour mieux comprendre les écritures runiques qu'il a découvertes dans les profondeurs de l'[Iris du Monde](../../lieux/verteris/carcelie/vallee-du-sel/vallee-du-sel.md), ainsi que les mystères qui entourent son peuple.
 
 ## Apparence
 

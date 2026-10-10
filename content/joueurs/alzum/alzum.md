@@ -2,7 +2,7 @@
 title: Alzum
 character-sheet: https://pathbuilder2e.com/launch.html?build=1577113
 classe: Kineticist, Single Gate (Earth)
-image: "[[alzum.png]]"
+image: "[[./alzum.png]]"
 joueur: Valentin
 tags: [joueur, nassahr, orc, personnage]
 ---
@@ -13,7 +13,11 @@ Alzum Al-Musafir Zar-Jad est un grand orc **Naas-Al-Kharash**, fier habitant d'[
 
 
 
-![245](alzum.png)
+![245](./alzum.png)
+
+## Quête
+
+Les raisons du départ d'Alzum de ses terres natales restent encore mystérieuses, mais ce dernier semble démontrer un grand intérêt vis-à-vis des plans élémentaires.
 
 ## Apparence
 
