@@ -280,6 +280,7 @@ plugins:
     enabled: true
     options:
       links:
+        Admin: /admin
         GitHub: https://github.com/satche/fantasy-wiki
     layout:
       position: footer
