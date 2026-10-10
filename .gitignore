@@ -21,3 +21,4 @@ admin
 # Content files to ignore
 statblock.*
 _template.*
+*.mp4
