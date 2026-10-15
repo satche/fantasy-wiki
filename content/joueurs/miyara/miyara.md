@@ -22,7 +22,7 @@ Miyara Vardelis est une elfe originaire de [Treskaï](../../lieux/verteris/trave
 
 ## Quête
 
-Miyara cherche à lever des mystères qui tournent autour de Rikka.
+Miyara a quitté Treskaï pour retrouver les traces de ses ancêtres et mieux comprendre leur migration durant l’Âge des Ruines. Elle cherche ce qui subsiste de leur passage dans les lieux et les récits rencontrés en chemin. Elle espère également profiter de ce voyage pour en apprendre davantage sur Rikka, le renard qui l’accompagne.
 
 ## Apparence
 
