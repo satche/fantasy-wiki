@@ -1,6 +1,7 @@
 ---
 title: Verteris
-aliases: [Région des Plaines]
+aliases:
+  - Région des Plaines
 ---
 
 
@@ -13,16 +14,16 @@ Les conditions topologiques et météorologiques en font un lieu de faune divers
 
 ## Habitants
 
-Le physique des Verterriens est très variable, affichant un large pannels de carrures, poids et taille. Leur peau varie généralement du clair au hâlé, parfois tannée par le vent et le soleil. Leurs cheveux sont souvent blonds dorés, cuivrés ou encore châtains lumineux. Leurs yeux arborent des iris aux teintes chaudes; ambre, noisette ou vert doré.
+Le physique des Verterriens est très variable, affichant un large pannel de carrures, poids et taille. Leur peau varie généralement du clair au hâlé, parfois tannée par le vent et le soleil. Leurs cheveux sont souvent blonds dorés, cuivrés ou encore châtains lumineux. Leurs yeux arborent des iris aux teintes chaudes; ambre, noisette ou vert doré.
 
-
-
+Dans les pâturages, on peut parfois remarquer des paysans marqués par une anisotropie de la pupille: l'étirement horizontal leur permettant d'adapter la perception aux vastes horizons et d'avoir une meilleure vision sur leurs troupeaux.
 
 ## Economie
 
 En plus d'un commerce florissant, profitable notamment aux domaines de la recherche et des arcanes, la plupart des royaumes de la région jouissent d'une excellente agriculture. Grâce à ses prairies verdoyantes et son climat tempéré, le territoire est propice à forte variété dans ses cultures. Certains royaumes se sont ainsi spécialisés dans l'élevage, les céréales, le vin et autres denrées de qualité.
 
  Aliment, laine et cuire sont des ressources régionales abondantes. Verteris profite de sa localisation centrale avantageuse pour exporter ces précieuses denrées aux royaumes voisins.
+
 
 ### Monnaie
 
@@ -42,6 +43,12 @@ Dans les tavernes, les commandes sont souvent accompagnées d'une cruche d'eau: 
 Le Verteris est une langue fluide presque chantée, avec des sonorités longues et portées. Elle utilise de nombreux prolongements de voyelles, donnant un rythme ondulant qui rappelle les langues latines.
 
 *Verteris* viendrait de "Vertes terres" en langue locale.
+
+### Proverbes
+
+| Expression        | Signification          |
+| ----------------- | ---------------------- |
+| Mouiller sa pièce | Ne pas faire confiance |
 
 ### Vocabulaire
 
@@ -64,7 +71,9 @@ Le Verteris est une langue fluide presque chantée, avec des sonorités longues 
 | Coeur            | Cor      |
 | Côte, rive, bord | Lito     |
 | Dessous          | Infra    |
+| Dormir           | Somnus   |
 | Dos              | Dorsum   |
+| Eau              | Aqua     |
 | Erable           | Acer     |
 | Figue            | Fic      |
 | Fille            | Filia    |

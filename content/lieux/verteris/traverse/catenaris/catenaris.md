@@ -1,19 +1,12 @@
 ---
 title: Caténaris
 description: Province du royaume de Traverse
-aliases:
-  - La Catena
-  - La Chaîne
-  - Pays du Sillon
+aliases: [La Catena, La Chaîne, Pays du Sillon]
 image: "[[./catenaris.png]]"
 localisation:
   - "[[../../../../lore/geographie/verteris|Verteris]]"
   - "[[../traverse|Traverse]]"
-tags:
-  - joueur
-  - lieu
-  - région
-  - verteris
+tags: [joueur, lieu, région, verteris]
 ---
 
 # Caténaris
@@ -27,7 +20,7 @@ Caténaris est une province du royaume de [Traverse](../traverse.md), occupant u
 
 ## Communautés
 
-| Nom                                 | Type  | Description                                   |
-| ----------------------------------- | ----- | --------------------------------------------- |
-| [Treskaï](./treskai/treskai.md)       | Bourg | Bourg des voyageurs, carrefour de la Catena   |
+| Nom                             | Type  | Description                                 |
+| ------------------------------- | ----- | ------------------------------------------- |
+| [Treskaï](./treskai/treskai.md) | Ville | Bourg des voyageurs, carrefour de la Catena |
 
