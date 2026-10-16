@@ -17,7 +17,8 @@ Cinq aventuriers se sont rencontrés à [Descapras](./lieux/verteris/altera/desc
 
 ## Changelog
 
-<time datime="2026-10-10"><b>10 octobre 2026</b></time> <small>(Dernière mise-à-jour)</small>
+<time datime="2026-10-16"><b>16 octobre 2026</b></time> <small>(Dernière mise-à-jour)</small>
 
+- Ajout des [Divinités](./lore/religion/divinites/divinites.md)
 - Ouverture du [paneau d'administration](./admin/)
 - Ouverture d'un chapitre "Quête" pour les joueurs

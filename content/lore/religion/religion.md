@@ -10,10 +10,11 @@ Au fil des âges et des époques, les croyances et la perception du surnaturel o
 summaries: {}
 filters:
   and:
-    - file.folder == "lore/religion"
-    - "!file.folder.contains(file.name)"
     - draft != "true"
-    - file.ext == "md"
+    - or:
+        - file.folder == "lore/religion"
+        - file.path == "lore/religion/divinites/divinites.md"
+    - file.path != "lore/religion/religion.md"
 properties:
   note.region:
     displayName: Localisation
@@ -56,8 +57,4 @@ Les noms des Dieux et des Déesses resurgissent du passé, murmurés dans les so
 Vénérer un voir plusieurs dieux est très personnel. Il n'est pas rare de voir des membres d'une communauté fidèles à des divinités différentes sans que cela ne crée de conflits. Les cultes réunissent généralement des dieux qui respectent les même [Fondations](./sept-fondations.md), car elles partagent des idées, valeurs et quêtes similaires.
 
 Certains groupes organisent des rituels qui visent à faire avancer ensemble plusieurs dieux dans une direction commune. Il se peut d'ailleurs que deux cultures différentes prient les même divinités mais de manière différente: une société prônera les prières isolées et individuelles, alors que l'autre en organisera au sein de sa communauté.
-
-
-
-
 
