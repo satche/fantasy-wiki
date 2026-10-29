@@ -79,3 +79,13 @@ Le nom *Nassahr* provient de la contraction des mots *Naas* (peuple) et *Sa
 | Voyageur / Éclaireur | Musafir    |
 
 
+
+
+## Culture
+
+### Salut Nassahrien
+
+Dans toute la région des Sables, les locaux se présentent avec le salut Nassahrien. Il s'exécute en inclinant légèrement la tête vers le bas et en passant brièvement sa main du bas du nez jusqu'au menton, paume dirigée vers le visage, tout en redressant la nuque — similaire à un homme qui caresserait sa barbe.
+
+Il semblerait que cette forme de politesse vient des peuples nomades qui se croisent dans le désert. Ces derniers portent régulièrement un foulard pour cacher leur bouche, évitant ainsi d'inspirer trop de sable en suspension dans l'air et protégeant leurs lèvres de s'assécher. Le mouvement fait pour abaisser le foulard et parler à un compère s'est transmis au-delà des régions désertique et est devenu andémique de la région. À l'inverse, il est commun de voir des cultures inverser le mouvement pour se dire aurevoir, bien que cela soit moins réputé.
+

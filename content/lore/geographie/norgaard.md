@@ -41,3 +41,4 @@ Le Norgaardois est composée de sons rudes et gutturaux, s'inspirant des langues
 | Montagne | Fjall      |
 | Nord     | Norr       |
 | Coffre   | Kiste      |
+

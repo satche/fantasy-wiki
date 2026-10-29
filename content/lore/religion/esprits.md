@@ -4,7 +4,7 @@ title: Esprits
 
 # Esprits
 
-Les [divinités](divinites/divinites.md) n'ont pas toujours été au cœur des croyances. Durant l'[Âge des Royaumes](../histoire/03.age-des-royaumes.md#Religion), les sociétés pensaient que ces derniers étaient éteints ou même inexistants. Pourtant, les peuples n'étaient pas dépourvu de toute spiritualité: les esprits constituaient le paradigme religieux dominant à travers toutes les terres.
+Les [divinités](divinites.md) n'ont pas toujours été au cœur des croyances. Durant l'[Âge des Royaumes](../histoire/03.age-des-royaumes.md#Religion), les sociétés pensaient que ces derniers étaient éteints ou même inexistants. Pourtant, les peuples n'étaient pas dépourvu de toute spiritualité: les esprits constituaient le paradigme religieux dominant à travers toutes les terres.
 
 À cette époque, on pensait que les âmes des défunts éraient entre le domaine des morts et des vivants, capables d'encore agir sur le monde physique. L'esprit des ancêtres les plus remarquables, ceux ayant accomplis d'importants exploits, étaient même pourvus de capacités surnaturelles.
 

@@ -25,35 +25,30 @@ Le Xiezufen, littéralement "écriture du vent", est la principale écriture du 
 
 ### Vocabulaire
 
-| Français           | Yufeng |
-| ------------------ | ------ |
-| Blanc              | Shira  |
-| Brique             | Zeng   |
-| Ciel               | Sora   |
-| Côtes              | Kaigan |
-| Eau                | Mishu  |
-| Ecriture           | Xiezu  |
-| Esprit             | Shin   |
-| Froid              | Lan    |
-| Grand              | Wei    |
-| Guilde, assemblée  | Kai    |
-| Long               | Zhang  |
-| Mer                | Hai    |
-| Montagne           | Yama   |
-| Mur                | Kabe   |
-| Naissance, origine | Yun    |
-| Noir               | Kura   |
-| Nord               | Bei    |
-| Nouveau            | Xin    |
-| Ouest              | Nishi  |
-| Pays               | Kuni   |
-| Petit              | Shio   |
-| Peuple             | Min    |
-| Robuste            | Wei    |
-| Roche              | Yanshi |
-| Rouge              | Aka    |
-| Terre              | Ikyu   |
-| Vent               | Feng   |
-| Vert               | Mida   |
-
+| Français           | Yufeng  |
+| ------------------ | ------- |
+| Blanc              | Shira   |
+| Brique             | Zeng    |
+| Ciel               | Sora    |
+| Eau                | Mishu   |
+| Ecriture           | Xiezu   |
+| Esprit             | Shin    |
+| Froid              | Lan     |
+| Guilde, assemblée  | Kai     |
+| Mer                | Hai     |
+| Montagne           | Yama    |
+| Mur                | Kabe    |
+| Naissance, origine | Yun     |
+| Noir               | Kura    |
+| Nord               | Bei     |
+| Nouveau            | Xin     |
+| Ouest              | Nishi   |
+| Pays               | Kuni    |
+| Petit              | Shio    |
+| Peuple             | Hito    |
+| Roche              | Yanshi  |
+| Rouge              | Aka     |
+| Terre              | Ikyu    |
+| Vent               | Feng    |
+| Vert               | Mida    |
 

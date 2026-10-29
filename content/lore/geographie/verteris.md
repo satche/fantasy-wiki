@@ -1,7 +1,6 @@
 ---
 title: Verteris
-aliases:
-  - Région des Plaines
+aliases: [Région des Plaines]
 ---
 
 
@@ -14,16 +13,14 @@ Les conditions topologiques et météorologiques en font un lieu de faune divers
 
 ## Habitants
 
-Le physique des Verterriens est très variable, affichant un large pannel de carrures, poids et taille. Leur peau varie généralement du clair au hâlé, parfois tannée par le vent et le soleil. Leurs cheveux sont souvent blonds dorés, cuivrés ou encore châtains lumineux. Leurs yeux arborent des iris aux teintes chaudes; ambre, noisette ou vert doré.
+Le physique des Verterriens est très variable, affichant un large pannels de carrures, poids et taille. Leur peau varie généralement du clair au hâlé, parfois tannée par le vent et le soleil. Leurs cheveux sont souvent blonds dorés, cuivrés ou encore châtains lumineux. Leurs yeux arborent des iris aux teintes chaudes; ambre, noisette ou vert doré.
 
-Dans les pâturages, on peut parfois remarquer des paysans marqués par une anisotropie de la pupille: l'étirement horizontal leur permettant d'adapter la perception aux vastes horizons et d'avoir une meilleure vision sur leurs troupeaux.
+
+
 
 ## Economie
 
-En plus d'un commerce florissant, profitable notamment aux domaines de la recherche et des arcanes, la plupart des royaumes de la région jouissent d'une excellente agriculture. Grâce à ses prairies verdoyantes et son climat tempéré, le territoire est propice à forte variété dans ses cultures. Certains royaumes se sont ainsi spécialisés dans l'élevage, les céréales, le vin et autres denrées de qualité.
-
- Aliment, laine et cuire sont des ressources régionales abondantes. Verteris profite de sa localisation centrale avantageuse pour exporter ces précieuses denrées aux royaumes voisins.
-
+En plus d'un commerce florissant, profitable notamment aux domaines de la recherche et des arcanes, la plupart des royaumes de la région jouissent d'une excellente agriculture. Aliment, laine et cuire sont des ressources régionales abondantes. Verteris profite de sa localisation centrale avantageuse pour exporter ces précieuses denrées aux royaumes voisins.
 
 ### Monnaie
 
@@ -31,12 +28,17 @@ La région utilise principalement la [monnaie mat](../economie.md#Monnaie%20mat)
 
 
 
+## Culture
 
-Les caractéristiques de la monnaie mat se reflètent parfois dans la culture verterienne. Les marchands traitant les plus grandes sommes utilisent parfois de grands bocaux en verre avec des filets pour rapidement immerger les pièces et repérer les fausses monnaies qui garderaient leur éclat. Les plus petits commerces utilisent quant à eux de grands verres à bière ou des assiettes creuses.
+### Coutumes
 
-Dans les tavernes, les commandes sont souvent accompagnées d'une cruche d'eau: il est de coutume, lorsqu'on désire laisser un pourboire, de le faire dans un verre rempli d'eau - une manière discrète pour le client de mettre le montant qu'il désire sans jugement extérieur.
+L'eau occupe une place singulière dans les habitudes verterriennes: sa couleur bleutée est souvent signe d'honnêteté.
 
+La **coupole d'eau** en est l'expression la plus quotidienne. Il s'agit d'un simple bol d'eau que les marchands gardent à portée de main pour éprouver l'authenticité de leurs pièces mat: une pièce véritable s'y ternit aussitôt, tandis qu'une contrefaçon conserve son brillant. D'un coup d'œil, le commerçant jauge ainsi toute une poignée de monnaie. Les grandes maisons traitant de grosses sommes immergent même des centaines de pièces d'un seul geste, à l'aide de grands bocaux munis de filets.
 
+Ce geste utilitaire s'est aussi glissé dans les tavernes. Chaque commande s'accompagne d'une cruche ou d'un bol d'eau, et il est de coutume d'y laisser son pourboire en le déposant dans un verre rempli d'eau — une manière discrète de donner sans jugement extérieur.
+
+Plusieurs jeux se sont dessinés dans les tavernes. On jette des pièces de cuivre et d'argent dans un verre d'eau, et une fois celles-ci mates et indifférenciables, chacun pioche au hasard, laissant au sort le soin de décider du gain ou de la perte.
 
 ## Langue
 
@@ -46,9 +48,10 @@ Le Verteris est une langue fluide presque chantée, avec des sonorités longues 
 
 ### Proverbes
 
-| Expression        | Signification          |
-| ----------------- | ---------------------- |
-| Mouiller sa pièce | Ne pas faire confiance |
+| Expression                  | Signification                                                                    |
+| --------------------------- | -------------------------------------------------------------------------------- |
+| Mouiller / tremper sa pièce | Ne pas faire confiance                                                           |
+| Mat à l'eau                 | Juste, correct. Origine probable du termer "matelot", aide maritime de confiance |
 
 ### Vocabulaire
 
@@ -56,6 +59,7 @@ Le Verteris est une langue fluide presque chantée, avec des sonorités longues 
 | ---------------- | -------- |
 | 3                | Tres     |
 | 10               | Desca    |
+| 1000             | Milles   |
 | Agriculteur      | Agriola  |
 | Aiguilles        | Acus     |
 | Arbre            | Arbus    |
@@ -66,14 +70,13 @@ Le Verteris est une langue fluide presque chantée, avec des sonorités longues 
 | Chaîne           | Catena   |
 | Chant            | Carma    |
 | Charpentier      | Faber    |
+| Chasse           | Venatio  |
+| Cheval           | Equi     |
 | Chèvre           | Capra    |
 | Ciel             | Celi     |
 | Coeur            | Cor      |
 | Côte, rive, bord | Lito     |
-| Dessous          | Infra    |
-| Dormir           | Somnus   |
 | Dos              | Dorsum   |
-| Eau              | Aqua     |
 | Erable           | Acer     |
 | Figue            | Fic      |
 | Fille            | Filia    |
@@ -81,13 +84,11 @@ Le Verteris est une langue fluide presque chantée, avec des sonorités longues 
 | Flotter          | Flottus  |
 | Forêt            | Silva    |
 | Froid            | Frigus   |
-| Géant            | Titan    |
-| Gens             | Gens     |
 | Gris             | Canus    |
 | Hache            | Axia     |
 | Haut             | Alti     |
-| Hutte            | Canaba   |
 | Ile              | Isla     |
+| Jumeaux          | Gemni    |
 | Lac              | Lacus    |
 | Lumière          | Lumus    |
 | Main             | Mani     |
@@ -96,14 +97,13 @@ Le Verteris est une langue fluide presque chantée, avec des sonorités longues 
 | Milieux          | Medium   |
 | Monastère        | Monastar |
 | Montagne         | Monta    |
+| Mort             | Mortus   |
 | Nombreux         | Multi    |
 | Nova             | Nouveau  |
 | Nuage / Brume    | Nebula   |
 | Or               | Oros     |
-| Passage          | Transit  |
 | Pente            | Clive    |
 | Père             | Patris   |
-| Peuple           | Populi   |
 | Plage            | Litus    |
 | Pomme            | Pomus    |
 | Pommier          | Arpom    |
@@ -113,8 +113,8 @@ Le Verteris est une langue fluide presque chantée, avec des sonorités longues 
 | Ruche            | Alveus   |
 | Sans             | Sin      |
 | Sel              | Sal      |
-| Sol              | Solum    |
 | Terre            | Terra    |
+| Trou             | Pertuis  |
 | Vallée           | Vallis   |
 | Vaste            | Vastas   |
 | Venir            | Vini     |
