@@ -4,11 +4,7 @@ character-sheet: https://pathbuilder2e.com/launch.html?build=1577184
 classe: Rogue, Thief Racket
 image: "[[./shin.png]]"
 joueur: Titeo
-tags:
-  - joueur
-  - personnage
-  - tengu
-  - yu-feng
+tags: [joueur, personnage, tengu, yu-feng]
 ---
 
 # Shin
@@ -38,8 +34,6 @@ Il porte un large bec de corbeau, marqué d'une cicatrice bien visible sur la pa
 Il porte une armure légère en cuir et une longue cape à capuche, fermée au cou par une broche en forme de plume, qui l'aide à planer dans les courants de vent. Ses mains sont couvertes de mitaines en cuir, laissant voir des doigts crochus ornés de plusieurs bagues, dont une chevalière gravée du sceau officiel de son clan, son « permis d'archéologue ».
 
 Deux <abbr title="Sabres courts">wakizashi</abbr> sont accrochés à sa ceinture, aux fourreaux noirs et blancs décorés de symboles.
-
-## Histoire
 
 
 
