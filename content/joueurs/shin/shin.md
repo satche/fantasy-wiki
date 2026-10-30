@@ -1,8 +1,8 @@
 ---
 title: Shin
-character-sheet: https://pathbuilder2e.com/launch.html?build=1577184
 classe: Rogue, Thief Racket
-image: "[[./shin.png]]"
+image: /public/Shin_Portrait_tenue_sombre_20261030_v15.png
+character-sheet: https://pathbuilder2e.com/launch.html?build=1577184
 joueur: Titeo
 tags:
   - joueur
@@ -15,15 +15,13 @@ tags:
 
 Shin Akaze est un tengu, un homme-corbeau originaire du [Yu Feng](../../lore/geographie/yu-feng.md), dans la cité de [Tianshan](../../lieux/yu-feng/zhangkai/tianshan/tianshan.md). Archéologue de sa région, il a découvert une mystérieuse pierre lors d'une fouille qui semble résonner avec la broche en forme de plume léguée par son mentor disparu: Karasumaru. Il a dû précipitamment fuire son pays, car depuis cette trouvaille, des individus le traquent de près.
 
-![308](./shin.png)
+![308](/public/Shin_Portrait_tenue_sombre_20261030_v15.png)
 
 ## Quête
 
  Shin tente de mieux comprendre les origines et les liens entre la broche remise par son maître et la pierre portée en médaillon trouvé dans les ruines. Cette dernière semble contenir des runes similaires à celles découvertes par [Nataniel](../nataniel/nataniel.md) dans sa région et [Corvenna](../corvenna/corvenna.md) dans le carnet de son mentor.
 
 Autre mystère: la pierre ne semble pas émettre de magie, et Rikka, le renard de [Miyara](../miyara/miyara.md), semble réagir étrangement à sa présence.
-
-
 
 ## Apparence
 
@@ -41,11 +39,9 @@ Deux <abbr title="Sabres courts">wakizashi</abbr> sont accrochés à sa ceinture
 
 ## Histoire
 
-
-
 ## Détails
 
-| Détail       | Réponse                       |
-| ------------ | ----------------------------- |
-| Couleur      | Noir                          |
+| Détail | Réponse |
+| --- | --- |
+| Couleur | Noir |
 | Anniversaire | 6 de la Septième Lune, 239 AA |
