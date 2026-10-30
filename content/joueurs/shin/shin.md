@@ -33,9 +33,21 @@ Il porte un large bec de corbeau, marqué d'une cicatrice bien visible sur la pa
 
 ### Tenue et équipement
 
-Il porte une armure légère en cuir et une longue cape à capuche, fermée au cou par une broche en forme de plume, qui l'aide à planer dans les courants de vent. Ses mains sont couvertes de mitaines en cuir, laissant voir des doigts crochus ornés de plusieurs bagues, dont une chevalière gravée du sceau officiel de son clan, son « permis d'archéologue ».
+Il porte une armure légère en cuir et une longue cape à capuche, fermée au cou par une broche en forme de plume, qui l'aide à planer dans les courants de vent. Ses mains sont couvertes de mitaines en cuir, laissant voir des doigts crochus ornés de plusieurs bagues, dont une chevalière gravée du sceau officiel de son clan, son « permis d'archéologue ». Il porte au cou, un collier en argent orné d'une pierre d'obsidienne, avec des glyphes/Runes mystérieuses, découvert lors de fouilles archéologiques non loin de son pays. 
 
 Deux <abbr title="Sabres courts">wakizashi</abbr> sont accrochés à sa ceinture, aux fourreaux noirs et blancs décorés de symboles.
+
+![](/public/Shin_Obsidienne_energie_degrade_20261030_v6.png "Shin's Obsidian Necklace")
+
+_Collier de Shin avec la pierre et ses inscriptions runiques_
+
+![](/public/Shin_Broche_focus_20261030_v1.png "Shin's pin")
+
+_La broche en forme de plume de Shin_
+
+![](/public/Shin_Chevaliere_focus_20261030_v1.png "Shin's ring")
+
+_La chevalière de Shin avec la gravure du sceau de son clan_ Kazezume
 
 ## Histoire
 
