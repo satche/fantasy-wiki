@@ -1,7 +1,7 @@
 ---
 title: Altera
 description: Royaume situé au nord-est de Verteris, connu pour ses recherches dans le domaine des arcanes
-image: "[[./altera-illustration.png]]"
+image: "[[altera-map.jpeg]]"
 localisation: "[Verteris](../../../lore/geographie/verteris.md)"
 tags: [lieu, récent, royaume, verteris]
 ---
@@ -10,7 +10,7 @@ tags: [lieu, récent, royaume, verteris]
 
 Le royaume d'Altera siège au nord-est de [Verteris](../../../lore/geographie/verteris.md), étendu jusqu'aux côtes orientales de la région. Son territoire est situé sur un plateau d'altitude moyenne. Sa capitale arcanique, [La Celtane](./celtane/celtane.md), domine le centre du territoire, tandis que sa façade maritime lui assure un rôle commercial important.
 
-![](./altera-illustration.png)
+![](./altera-map.jpeg)
 
 ## Géographie
 
