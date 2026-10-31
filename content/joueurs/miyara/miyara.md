@@ -8,7 +8,7 @@ character-sheet: https://pathbuilder2e.com/launch.html?build=1577151
 character-sheet-json: https://pathbuilder2e.com/json.php?id=482837
 classe: Witch, Resentment
 hp: 13
-image: "[[./miyara.png]]"
+image: "[[./miyara-portrait.png]]"
 joueur: Thalessy
 languages: "Verterien, Yufeng, Elfique, Common"
 level: 1
@@ -77,7 +77,7 @@ type: Creature
 
 Miyara Vardelis est une elfe originaire de [Treskaï](../../lieux/verteris/traverse/catenaris/treskai/treskai.md), dans la province de [Caténaris](../../lieux/verteris/traverse/catenaris/catenaris.md), au royaume de [Traverse](../../lieux/verteris/traverse/traverse.md), à l'est de [Verteris](../../lore/geographie/verteris.md). Elle a grandi bercée par les traditions de ses racines [yu-fengiennes](../../lore/geographie/yu-feng.md). Elle est accompagnée de Rikka, son jeune renard blanc à neuf queues.
 
-![](./miyara.png)
+![](./miyara-portrait.png)
 
 ## Quête
 

@@ -4,7 +4,7 @@ description: Jeune archiviste de Verteris
 ac: 13
 atlas-template: pf2e-creature-000000
 hp: 6
-image: npcs/lorquena/lorquena.jpg
+image: /npcs/lorquena/lorquena-portrait.jpg
 items:
   - books
   - dagger
@@ -64,7 +64,7 @@ Lorquéna Domlénar est une archiviste itinérante, travaillant surtout dans l'e
 
 ## Apparence
 
-![235](./lorquena.jpg)
+![235](./lorquena-portrait.jpg)
 
 Lorquéna est une femme qui a approche lentement la quarantaine. Sa silhouette gracile et discrète accompagne une peau claire qui affiche de fines rides au coin des yeux. Ses cheveux châtains clairs affichent des mèches blondes généralement noués en chignon. Son regard aux reflets noisettes brille à la découverte de nouveaux ouvrages.
 

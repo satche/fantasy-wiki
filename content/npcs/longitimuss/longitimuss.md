@@ -1,7 +1,7 @@
 ---
 title: Longitimuss
 description: "Dimensiologue apprenti étudiant au collège de l'Unios, à l'Académie de La Celtane"
-image: "[[./longitimuss.png]]"
+image: "[[./longitimuss-portrait.png]]"
 localisation:
   - "[[../../lieux/verteris/altera/celtane/celtane|La Celtane]]"
   - "[[../../lieux/verteris/altera/altera|Altera]]"
@@ -13,5 +13,5 @@ tags: [arcane, humain, npc, récent, verteris]
 
 Longitimuss est un apprenti dimensiologue qui travaille au collège de l'Unios, à l'Académie de [La Celtane](../../lieux/verteris/altera/celtane/celtane.md). Il est un des élèves de l'archimage Orvalinus.
 
-![270](./longitimuss.png)
+![270](./longitimuss-portrait.png)
 

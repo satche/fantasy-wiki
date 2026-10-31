@@ -2,7 +2,7 @@
 title: La Vallée du Sel
 description: Province marécageuse isolée du royaume de Carcelie
 aliases: [Dernier Refuge, Iliari, Iris du Monde]
-image: "[[./vallee-du-sel.png]]"
+image: "[[./vallee-du-sel-illustration.png]]"
 localisation:
   - "[Carcelie](../carcelie.md)"
   - "[Verteris](../../../../lore/geographie/verteris.md)"

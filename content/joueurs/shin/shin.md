@@ -9,7 +9,7 @@ defensive_abilities:
   - name: Surprise Attack
     desc: "On the first round of combat, creatures that haven't acted yet are off-guard against his attacks."
 hp: 24
-image: "[[./shin.png]]"
+image: "[[./shin-portrait.png]]"
 items:
   - wakizashi
   - leather armor
@@ -80,7 +80,7 @@ type: Creature
 
 Shin Akaze est un tengu, un homme-corbeau originaire du [Yu Feng](../../lore/geographie/yu-feng.md), dans la cité de [Tianshan](../../lieux/yu-feng/zhangkai/tianshan/tianshan.md). Archéologue de sa région, il a découvert une mystérieuse pierre lors d'une fouille qui semble résonner avec la broche en forme de plume léguée par son mentor disparu: Karasumaru. Il a dû précipitamment fuire son pays, car depuis cette trouvaille, des individus le traquent de près.
 
-![308](shin.png)
+![308](shin-portrait.png)
 
 ## Quête
 

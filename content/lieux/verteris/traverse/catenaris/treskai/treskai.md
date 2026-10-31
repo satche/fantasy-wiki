@@ -2,7 +2,7 @@
 title: Treskaï
 description: Bourg des voyageurs de Caténaris
 aliases: [Terrasse des Brumes]
-image: "[[./treskai.png]]"
+image: "[[./treskai-illustration.png]]"
 localisation:
   - "[[../catenaris|Caténaris]]"
   - "[[../../../../../lore/geographie/verteris|Verteris]]"

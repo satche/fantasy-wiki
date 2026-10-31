@@ -2,7 +2,7 @@
 title: Caténaris
 description: Province du royaume de Traverse
 aliases: [La Catena, La Chaîne, Pays du Sillon]
-image: "[[./catenaris.png]]"
+image: "[[./catenaris-illustration.png]]"
 localisation:
   - "[[../../../../lore/geographie/verteris|Verteris]]"
   - "[[../traverse|Traverse]]"

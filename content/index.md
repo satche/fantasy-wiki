@@ -10,7 +10,7 @@ title: "Encyclopédie d'Asema"
 [La Celtane](./lieux/verteris/altera/celtane/celtane.md), [Royaume d'Altera](./lieux/verteris/altera/altera.md), [Verteris](./lore/geographie/verteris.md)
 
 **Résumé**
-À [La Celtane](./lieux/verteris/altera/celtane/celtane.md), le groupe tente de lever le mystère sur l'écriture qui les lie. Ils décrochent des entretiens avec des personnalités de l'Académie; la [professeure Seraphine](./npcs/seraphine/seraphine.md) et le [professeur Kepler](./npcs/kepler/kepler.md). Ils apprennent alors que leur
+À [La Celtane](./lieux/verteris/altera/celtane/celtane.md), le groupe tente de lever le mystère sur l'écriture qui les lie. Ils décrochent des entretiens avec des personnalités de l'Académie; la [professeure Seraphine](./npcs/seraphine/seraphine.md) et le [professeur Kepler](./npcs/kepler/kepler.md). Ils apprennent alors l'origine des runes qui vibrent: le [Vibrellis](lore/magie/vibrellis/vibrellis.md) semblerait être l'écriture fondamentale au cœur de toute la magie.
 
 **Dernière session**
 [Les runes qui vibrent](./sessions/8.md)
@@ -19,9 +19,6 @@ title: "Encyclopédie d'Asema"
 
 <time datime="2026-10-28"><b>28 octobre 2026</b></time> <small>(Dernière mise-à-jour)</small>
 
-- Session 8 : [Les runes qui vibrent](./sessions/8.md) — finalisée et publiée
-- Ajout de la fiche [Archimage Warnock](./npcs/warnock/warnock.md)
-- Mise à jour de la fiche [professeure Seraphine](./npcs/seraphine/seraphine.md) (description physique)
-- Mise à jour de [La Celtane](./lieux/verteris/altera/celtane/celtane.md) : niveaux de confidentialité de l'Académie, plat typique (pavé d'argent), Alina Newell
-- Note sur [Alzum](./joueurs/alzum/alzum.md) : échec critique sur la carte des plants élémentaires
-- Préparation de la rencontre du soir du 12 de la Sixième Lune avec [Kepler](./npcs/kepler/kepler.md) (session 9)
+- Ajout des [Divinités](lore/religion/divinites.md)
+- Ajout du [Vibrellis](lore/magie/vibrellis/vibrellis.md)
+- 

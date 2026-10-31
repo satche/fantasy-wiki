@@ -1,7 +1,7 @@
 ---
 title: Descapras
 description: Village rural issu du royaume d'Altera
-image: "[[descapras.jpg]]"
+image: "[[descapras-illustration.jpg]]"
 localisation:
   - "[[../../../../lore/geographie/verteris|Verteris]]"
   - "[[../altera|Altera]]"
@@ -15,7 +15,7 @@ tags:
 
 <abbr title="Dix Chèvres">Descapras</abbr> est un petit village situé dans la province d'Aclive, dans le royaume d'[Altera](../altera.md) à [Verteris](../../../../lore/geographie/verteris.md).
 
-![](../Acerflot/acerflot.png)
+![](../acerflot/acerflot-illustration.png)
 
 ## Etablissements
 

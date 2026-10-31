@@ -2,7 +2,7 @@
 title: La Celtane
 description: "Capitale arcanique du royaume d'Altera"
 aliases: [Archceltis]
-image: "[[./celtane.png]]"
+image: "[[./celtane-illustration.png]]"
 localisation:
   - "[Verteris](../../../../lore/geographie/verteris.md)"
   - "[Altera](../altera.md)"
@@ -13,7 +13,7 @@ tags: [arcane, lieu, récent, verteris, ville]
 
 La Celtane est la capitale arcanique du royaume [Altera](../altera.md), situé à [Verteris](../../../../lore/geographie/verteris.md). C'est un lieu riche pour la recherche des arcanes. Elle est située en-dessous de l'Archceltis, une importante formation d'îles célestes flottant au-dessus de la ville.
 
-![](./celtane.png)
+![](./celtane-illustration.png)
 
 ![](./celtane-2.png)
 

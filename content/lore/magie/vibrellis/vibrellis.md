@@ -15,7 +15,7 @@ Une particularité du Vibrellis, et qui lui tient son nom, est que l'écriture s
 
 
 
-![275](./vibrellis.png) ![275](./vibrellis-2.png)
+![275](./vibrellis-illustration.png) ![275](./vibrellis-2.png)
 
 > [!NOTE]
 > Les images ci-dessous sont une abstraction de ce à quoi on peut s'attendre visuellement. Ce n'est pas une réplication exacte des runes et des glyphes*

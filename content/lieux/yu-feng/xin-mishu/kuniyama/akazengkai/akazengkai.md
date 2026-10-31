@@ -1,7 +1,7 @@
 ---
 title: Akazengkai
 description: Capitale politique et commerciale de Kuniyama
-image: "[[./akazengkai.png]]"
+image: "[[./akazengkai-illustration.png]]"
 localisation:
   - "[[../../xin-mishu|Xin Mishu]]"
   - "[[../../../../../lore/geographie/yu-feng|Yu Feng]]"

@@ -1,7 +1,7 @@
 ---
 title: Acerflot
 description: Village Alterien situé près d'un lac où lévite une parcelle de terre accueillant un érable
-image: "[[./acerflot.png]]"
+image: "[[./acerflot-illustration.png]]"
 localisation:
   - "[Verteris](../../../../lore/geographie/verteris.md)"
   - "[Altera](../altera.md)"
@@ -16,7 +16,7 @@ tags:
 
 Le village d'Acerflot a la particularité d'être positionné près d'un lac où flotte une parcelle de terre accueillant un érable ─ ce qui lui a valu l'ethymologie de son nom: <abbr title="Erable">Acer</abbr> <abbr title="flottant">Flottus</abbr>.
 
-![](./acerflot.png)
+![](./acerflot-illustration.png)
 
 ## Etablissements
 

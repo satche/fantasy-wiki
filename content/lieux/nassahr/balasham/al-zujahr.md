@@ -4,7 +4,7 @@ description: Le Sanctuaire d'Obsidienne, cité troglodyte des Naas-Al-Kharash
 aliases:
   - Sanctuaire d'Obsidienne
   - Sanctuaire du Verre des Sables
-image: "[[al-zujahr.png]]"
+image: "[[al-zujahr-illustration.png]]"
 localisation:
   - "[Balasham](balasham.md)"
   - "[Nassahr](../../../lore/geographie/nassahr.md)"

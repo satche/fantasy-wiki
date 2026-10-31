@@ -9,7 +9,7 @@ defensive_abilities:
   - name: Orc Ferocity
     desc: "↻ (1/day) When Alzum would be reduced to 0 HP but not immediately killed, he remains at 1 HP and his wounded condition increases by 1."
 hp: 22
-image: "[[./alzum.png]]"
+image: "[[./alzum-portrait.png]]"
 items:
   - backpack
   - dagger
@@ -80,7 +80,7 @@ Alzum Al-Musafir Zar-Jad est un grand orc **Naas-Al-Kharash**, fier habitant d'[
 
 
 
-![245](./alzum.png)
+![245](./alzum-portrait.png)
 
 ## Quête
 

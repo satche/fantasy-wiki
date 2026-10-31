@@ -9,7 +9,7 @@ defensive_abilities:
   - name: Clue In
     desc: "↻ When a creature allied with him attempts a check related to a lead he is pursuing, he can grant them a +1 circumstance bonus, or +2 if they are an expert or better in the relevant skill."
 hp: 26
-image: "[[./nataniel.png]]"
+image: "[[./nataniel-portrait.png]]"
 items:
   - shortsword
   - shortbow
@@ -92,7 +92,7 @@ type: Creature
 Nataniel Clerive est un jeune iliari issu de la [Vallée du Sel](../../lieux/verteris/carcelie/vallee-du-sel/vallee-du-sel.md), province située au sud de [Verteris](../../lore/geographie/verteris.md), dams le royaume de [Carcelie](../../lieux/verteris/carcelie/carcelie.md).
 
 
-![343](./nataniel.png)
+![343](./nataniel-portrait.png)
 
 ## Quête
 

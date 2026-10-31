@@ -2,7 +2,7 @@
 title: Tianshan
 description: Cité verticale située au nord du Yu Feng
 aliases: [Montagnes Célestes, Royaume des Six Clans]
-image: "[[./tianshan.png]]"
+image: "[[./tianshan-illustration.png]]"
 localisation:
   - "[[../../../../lore/geographie/yu-feng|Yu Feng]]"
   - "[[../zhangkai|Zhangkai]]"

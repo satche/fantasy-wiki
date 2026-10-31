@@ -10,7 +10,7 @@ defensive_abilities:
   - name: Mirror's Reflection
     desc: "↻ When she or an ally within 15 feet is targeted by an attack, she swaps places with one of her reflections to negate the attack's effects."
 hp: 18
-image: "[[./corvenna.png]]"
+image: "[[./corvenna-portrait.png]]"
 items:
   - chain shirt
   - flyssa
@@ -76,7 +76,7 @@ Covenna Amberlyne est une jeune gnome de la province de [Kuniyama](../../lieux/y
 
 
 
-![274](./corvenna.png)
+![274](./corvenna-portrait.png)
 
 ## Quête
 
