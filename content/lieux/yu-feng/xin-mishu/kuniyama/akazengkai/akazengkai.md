@@ -6,12 +6,7 @@ localisation:
   - "[[../../xin-mishu|Xin Mishu]]"
   - "[[../../../../../lore/geographie/yu-feng|Yu Feng]]"
   - "[[../kuniyama|Kuniyama]]"
-tags:
-  - capitale
-  - joueur
-  - lieu
-  - ville
-  - yu-feng
+tags: [capitale, joueur, lieu, ville, yu-feng]
 ---
 
 # Akazengkai
@@ -20,3 +15,8 @@ tags:
 
 
 
+## Destinations voisines
+
+| Nom                                           | Description         |
+| --------------------------------------------- | ------------------- |
+| [Sorashinkai](../soarashinkai/sorashinkai.md) | Capitale religieuse |
