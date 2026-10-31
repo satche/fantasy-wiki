@@ -1,6 +1,7 @@
 ---
 title: Sorashinkai
 description: Capitale religieuse de Kuniyama
+image: "[[sorashinkai-illustration.png]]"
 localisation:
   - "[[xin-mishu|Xin Mishu]]"
   - "[[../../../../../lore/geographie/yu-feng|Yu Feng]]"
