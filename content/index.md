@@ -22,4 +22,3 @@ title: "Encyclopédie d'Asema"
 - Ajout des [Divinités](lore/religion/divinites.md)
 - Ajout du [Vibrellis](lore/magie/vibrellis/vibrellis.md)
 - Ajout de la carte d'[Altera](lieux/verteris/altera/altera.md)
-- 
