@@ -29,3 +29,15 @@ views:
     cardSize: 130
 
 ```
+
+## Vue d'ensemble
+
+| Skill          | Alzum | Corvenna | Miyara | Nataniel | Shin |
+| -------------- | ----- | -------- | ------ | -------- | ---- |
+| **AC**         | 14    | 18       | 15     | 18       | 19   |
+| **Fortitude**  | +9    | +7       | +4     | +5       | +5   |
+| **Reflex**     | +6    | +6       | +5     | +9       | +10  |
+| **Will**       | +4    | +6       | +5     | +6       | +8   |
+| **Perception** | +4    | +6       | +3     | +6       | +8   |
+| **Stealth**    | +1    | +6       | +5     | +7       | +8   |
+| **Deception**  | +0    | +4       | +2     | +5       | +0   |

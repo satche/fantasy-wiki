@@ -1,11 +1,76 @@
 ---
 title: Miyara
-aliases: [Rikka]
+ac: 15
+aliases:
+  - Rikka
+atlas-template: pf2e-creature-000000
 character-sheet: https://pathbuilder2e.com/launch.html?build=1577151
+character-sheet-json: https://pathbuilder2e.com/json.php?id=482837
 classe: Witch, Resentment
-image: '[[./miyara.png]]'
+hp: 13
+image: "[[./miyara.png]]"
 joueur: Thalessy
-tags: [elfe, joueur, personnage, verteris, yu-feng]
+languages: "Verterien, Yufeng, Elfique, Common"
+level: 1
+name: Miyara Vardelis
+offensive_abilities:
+  - name: Evil Eye (focus cantrip)
+    desc: "◆ (concentrate, curse, fear, hex, mental, occult) The target must attempt a Will save; on a failure it becomes frightened 1 (frightened 2 on a critical failure)."
+  - name: Phase Familiar (focus spell)
+    desc: "◆❯ (conjuration, teleportation) Recalls her familiar, Rikka, to her side from anywhere on the same plane."
+passive_abilities:
+  - name: Witch Spellcasting
+    desc: "Prepared occult spells. Spell DC 17, spell attack +7. Can cast 2 first-rank spells and 5 cantrips per day."
+  - name: Familiar (Rikka)
+    desc: "Rikka, a nine-tailed white fox familiar with the abilities Familiar Focus, Recall Familiar and Fast Movement (land)."
+  - name: Familiar of Ongoing Misery
+    desc: "Her patron's familiar extends the duration of her hexes, making them linger on her enemies."
+  - name: Seer Elf
+    desc: "Innate arcane cantrip: detect magic (uses Charisma)."
+  - name: Schooled in Secrets
+    desc: "Trained in Arcana and Occultism."
+  - name: Additional Lore
+    desc: "Gains an additional lore skill of her choice."
+  - name: Elven Lore
+    desc: "Trained in a selection of elven loremaster skills."
+perception: "+3"
+recall_knowledge: "DC 15 • Humanoid (Society)"
+saves:
+  - 4
+  - 5
+  - 5
+senses: "Low-Light Vision"
+skills: "Acrobatics +5, Arcana +7, Athletics +3, Cult Lore +7, Diplomacy +5, Elven Lore +7, Intimidation +5, Medicine +3, Nature +3, Occultism +7, Society +7, Stealth +5, Survival +3"
+source: "[Fiche Pathbuilder](https://pathbuilder2e.com/launch.html?build=1577151)"
+spells_focus:
+  - name: Focus spells
+    desc: "◆ Evil Eye (focus cantrip); ◆❯ Phase Familiar. 1 focus point."
+speed: 30
+spells_innate:
+  - name: Arcane innate (Seer Elf)
+    desc: "Cantrip: detect magic."
+spells_prepared:
+  - name: Occult prepared spells
+    desc: "Cantrips: prestidigitation, message, figment, shield, needle darts. 1st level: force barrage, command."
+statblock: true
+stats:
+  - 0
+  - 2
+  - 1
+  - 4
+  - 0
+  - 2
+tags:
+  - elfe
+  - joueur
+  - personnage
+  - verteris
+  - yu-feng
+traits:
+  - Elf
+  - Humanoid
+  - Medium
+type: Creature
 ---
 
 # Miyara

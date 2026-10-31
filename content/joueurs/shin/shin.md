@@ -1,5 +1,79 @@
 ---
 title: Shin
+ac: 19
+atlas-template: pf2e-creature-000000
+character-sheet: https://pathbuilder2e.com/launch.html?build=1618088
+character-sheet-json: https://pathbuilder2e.com/json.php?id=482836
+classe: Rogue, Thief
+defensive_abilities:
+  - name: Surprise Attack
+    desc: "On the first round of combat, creatures that haven't acted yet are off-guard against his attacks."
+hp: 24
+image: "[[./shin.png]]"
+items:
+  - wakizashi
+  - leather armor
+  - thieves' toolkit
+  - backpack
+joueur: Titeo
+languages: "Yufeng, Tengu, Common"
+level: 2
+melee:
+  - name: wakizashi
+    desc: "◆ +8 [+4/+0] (agile, finesse, versatile P), Damage 1d4+4 slashing"
+  - name: beak
+    desc: "◆ +8 [+4/+0] (agile, finesse, unarmed), Damage 1d6+4 piercing"
+name: Shin Akaze
+offensive_abilities:
+  - name: Quick Draw
+    desc: "◆ Interacts to draw a weapon, then Strikes with it."
+  - name: Twin Feint
+    desc: "◆❯ Makes two Strikes against the same target with a melee weapon. If the first misses, the target is off-guard to the second attack."
+  - name: Pickpocket
+    desc: "Can Steal objects that are closely guarded, worn, or carried, though the second check is harder."
+passive_abilities:
+  - name: Sneak Attack
+    desc: "Deals +1d6 precision damage to off-guard creatures."
+  - name: Thief Racket
+    desc: "Adds his Dexterity modifier instead of Strength to damage with finesse weapons."
+  - name: Tengu Weapon Familiarity
+    desc: "Treats tengu weapons (wakizashi, katana, etc.) as simple weapons; grants access to uncommon tengu weapons."
+  - name: Tengu Glide
+    desc: "Glides safely to the ground while falling, negating damage."
+  - name: Skyborn Tengu
+    desc: "His flight feathers grant a +1 circumstance bonus to Acrobatics checks to Balance or to Maneuver in Flight."
+  - name: Concealing Legerdemain
+    desc: "Can Steal or Palm an Object while concealing it from view; observers must succeed on a Perception check to notice."
+  - name: Subtle Theft
+    desc: "Can Steal objects without others noticing even when observed; observers take a penalty to notice the theft."
+perception: "+8"
+recall_knowledge: "DC 16 • Humanoid (Society)"
+saves:
+  - 5
+  - 10
+  - 8
+senses: "Low-Light Vision"
+skills: "Acrobatics +10, Arcana +5, Athletics +5, Diplomacy +4, Intimidation +4, Occultism +5, Religion +6, Society +5, Stealth +8, Survival +6, Thievery +8, Underworld Lore +5"
+source: "[Fiche Pathbuilder](https://pathbuilder2e.com/launch.html?build=1618088)"
+speed: 25
+statblock: true
+stats:
+  - 1
+  - 4
+  - 1
+  - 1
+  - 2
+  - 0
+tags:
+  - joueur
+  - personnage
+  - tengu
+  - yu-feng
+traits:
+  - Tengu
+  - Humanoid
+  - Medium
+type: Creature
 ---
 
 # Shin

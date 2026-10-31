@@ -1,10 +1,77 @@
 ---
 title: Alzum
+ac: 14
+atlas-template: pf2e-creature-000000
 character-sheet: https://pathbuilder2e.com/launch.html?build=1577113
+character-sheet-json: https://pathbuilder2e.com/json.php?id=422253
 classe: Kineticist, Single Gate (Earth)
+defensive_abilities:
+  - name: Orc Ferocity
+    desc: "↻ (1/day) When Alzum would be reduced to 0 HP but not immediately killed, he remains at 1 HP and his wounded condition increases by 1."
+hp: 22
 image: "[[./alzum.png]]"
+items:
+  - backpack
+  - dagger
+  - steel shield
 joueur: Valentin
+languages: "Nassahr, Orc, Common"
+level: 2
+melee:
+  - name: dagger
+    desc: "◆ +6 [+2/-2] (agile, finesse, thrown 10 feet), Damage 1d4+3 piercing"
+  - name: fist
+    desc: "◆ +6 [+2/-2] (agile, finesse, nonlethal, unarmed), Damage 1d4+3 bludgeoning"
+  - name: elemental blast (earth)
+    desc: "◆ +7 (impulse) — Damage 1d8 bludgeoning or piercing, +3 (Strength) ; ◆❯ to add +4 (Constitution)"
+name: Alzum
+offensive_abilities:
+  - name: Channel Elements
+    desc: "◆ (aura) Activates his kinetic aura (10-foot emanation). Requires a free hand for impulses."
+  - name: Base Kinesis (Earth)
+    desc: "◆ Shapes, moves and manipulates nearby earth."
+  - name: Weapon Infusion
+    desc: "◇ (infusion) Shapes his elemental blast into a weapon form. Melee: add agile, backswing, forceful, reach or sweep. Ranged: 100 ft range + volley 30 ft, 50 ft range + propulsive, or 20 ft range + thrown."
+  - name: Armor in Earth
+    desc: "◆ (10 minutes) Encases himself in stone armor: medium armor, AC +4, max Dex +1, speed penalty −10 ft."
+  - name: Tremor
+    desc: "◆❯ (overflow) In a 10-foot burst within 30 feet: 1d8 bludgeoning, basic Fortitude save DC 17; critical failure: knocked prone. The area becomes difficult terrain."
+passive_abilities:
+  - name: Earth Impulse Junction
+    desc: "After using an earth impulse of 2 actions or more: +1 circumstance bonus to AC until the start of his next turn."
+  - name: Badlands Orc
+    desc: "Can Hustle twice as long while exploring; treats environmental heat as one step less extreme."
+  - name: Forager
+    desc: "Finds enough food for himself and one additional companion when using Survival to Subsist."
+  - name: Assurance (Survival)
+    desc: "On a Survival check, can replace the d20 roll with 10: a fixed result of 13 (10 + trained proficiency 3)."
+perception: "+4"
+ranged:
+  - name: elemental blast (earth)
+    desc: "◆ +7 (impulse), range 30 feet — Damage 1d8 bludgeoning or piercing ; ◆❯ to add +4 (Constitution) to damage"
+recall_knowledge: "DC 15 • Humanoid (Society)"
+saves:
+  - 9
+  - 6
+  - 4
+senses: "Darkvision"
+skills: "Acrobatics +4, Athletics +6, Lore (One Terrain) +3, Medicine +4, Nature +4, Survival +4"
+source: "[Fiche Pathbuilder](https://pathbuilder2e.com/launch.html?build=1577113)"
+speed: 25
+statblock: true
+stats:
+  - 3
+  - 1
+  - 4
+  - 0
+  - 1
+  - 0
 tags: [joueur, nassahr, orc, personnage]
+traits:
+  - Humanoid
+  - Medium
+  - Orc
+type: Creature
 ---
 
 # Alzum
