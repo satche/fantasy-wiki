@@ -19,4 +19,4 @@ tags: [capitale, joueur, lieu, ville, yu-feng]
 
 | Nom                                           | Description         |
 | --------------------------------------------- | ------------------- |
-| [Sorashinkai](../soarashinkai/sorashinkai.md) | Capitale religieuse |
+| [Sorashinkai](../Sorashinkai/sorashinkai.md) | Capitale religieuse |
