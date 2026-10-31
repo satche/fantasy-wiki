@@ -3,6 +3,9 @@ title: Hestios
 description: Divinité de l'agriculture
 domaine: Agriculture
 symbole: Un épi de blé et une faucille
+fondations:
+  - Hymnes de Lyriel
+  - Lois de Feryn
 ---
 
 # Hestios

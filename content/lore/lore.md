@@ -9,7 +9,7 @@ summaries: {}
 filters:
   and:
     - file.folder.startsWith("lore")
-    - file.folder == "lore" || file.folder.contains(file.name)
+    - file.folder == "lore" || file.folder == "lore/" + file.name
     - file.folder != file.name
 properties:
   note.region:
