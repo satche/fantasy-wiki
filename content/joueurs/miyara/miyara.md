@@ -1,17 +1,11 @@
 ---
-aliases:
-  - Rikka
 title: Miyara
+aliases: [Rikka]
+character-sheet: https://pathbuilder2e.com/launch.html?build=1577151
 classe: Witch, Resentment
 image: '[[./miyara.png]]'
-character-sheet: https://pathbuilder2e.com/launch.html?build=1577151
 joueur: Thalessy
-tags:
-  - elfe
-  - joueur
-  - personnage
-  - verteris
-  - yu-feng
+tags: [elfe, joueur, personnage, verteris, yu-feng]
 ---
 
 # Miyara
@@ -28,7 +22,7 @@ Miyara a quitté Treskaï pour retrouver les traces de ses ancêtres et mieux co
 
 L'elfe d'une trentaine d'année est grande et élancée. Elle a la peau d'ivoire, les yeux gris-vert et de longs cheveux noirs qu'elle rassemble habituellement en une tresse basse. Ses oreilles effilées s'inclinent légèrement vers l'arrière. Son visage est expressif: un sourcil relevé ou un sourire retenu annonce souvent une plaisanterie.
 
-Ses vêtements conservent une influence yufengienne adaptée au quotidien de Treskaï: robe vert grisé à pans croisés, pantalon souple, bottines brunes et manteau bleu d'ardoise. Des attaches permettent de retenir les pans lorsque le vent se lève. Une courte inscription en Xiezufen se trouve à l'intérieur d'un revers de manche; une bénédiction qui se traduit comme suit : **_Que demeure en toi le souffle, quand se lèveront les vents contraires._**
+Ses vêtements conservent une influence yufengienne adaptée au quotidien de Treskaï: robe vert grisé à pans croisés, pantalon souple, bottines brunes et manteau bleu d'ardoise. Des attaches permettent de retenir les pans lorsque le vent se lève. Une courte inscription en Xiezufen se trouve à l'intérieur d'un revers de manche; une bénédiction qui se traduit comme suit : ***Que demeure en toi le souffle, quand se lèveront les vents contraires.***
 
 ## Famille
 

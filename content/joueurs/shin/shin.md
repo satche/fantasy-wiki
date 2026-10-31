@@ -1,17 +1,12 @@
 ---
 title: Shin
-classe: Rogue, Thief Racket
-image: /public/Shin_Portrait_tenue_sombre_20261030_v15.png
-character-sheet: https://pathbuilder2e.com/launch.html?build=1577184
-joueur: Titeo
-tags: [joueur, personnage, tengu, yu-feng]
 ---
 
 # Shin
 
 Shin Akaze est un tengu, un homme-corbeau originaire du [Yu Feng](../../lore/geographie/yu-feng.md), dans la cité de [Tianshan](../../lieux/yu-feng/zhangkai/tianshan/tianshan.md). Archéologue de sa région, il a découvert une mystérieuse pierre lors d'une fouille qui semble résonner avec la broche en forme de plume léguée par son mentor disparu: Karasumaru. Il a dû précipitamment fuire son pays, car depuis cette trouvaille, des individus le traquent de près.
 
-![308](/public/Shin_Portrait_tenue_sombre_20261030_v15.png)
+![308](shin.png)
 
 ## Quête
 
@@ -33,11 +28,20 @@ Il porte une armure légère en cuir et une longue cape à capuche, fermée au c
 
 Deux <abbr title="Sabres courts">wakizashi</abbr> sont accrochés à sa ceinture, aux fourreaux noirs et blancs décorés de symboles.
 
+![275](pendentif.png "Shin's Obsidian Necklace")
+*Collier de Shin avec la pierre et ses inscriptions runiques*
 
+![275](broche.png "Shin's pin")
+*La broche en forme de plume de Shin*
+
+![275](chevaliere.png "Shin's ring")
+*La chevalière de Shin avec la gravure du sceau de son clan* Kazezume
+
+## Histoire
 
 ## Détails
 
-| Détail | Réponse |
-| --- | --- |
-| Couleur | Noir |
+| Détail       | Réponse                       |
+| ------------ | ----------------------------- |
+| Couleur      | Noir                          |
 | Anniversaire | 6 de la Septième Lune, 239 AA |
